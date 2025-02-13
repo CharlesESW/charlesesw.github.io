@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 1.5;
 }
 
 header {
@@ -34,7 +35,7 @@ header {
 h1, h2, h3 {
     margin: 10px 0;
     /* Apply the new color to the heading titles */
-    color: #B20D30; }
+    color: #6C091F; }
 
 .center-text {
     text-align: center;
@@ -63,3 +64,27 @@ a:hover {
     margin-right: 10px;
 }
 
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: black;
+  color: white;
+}

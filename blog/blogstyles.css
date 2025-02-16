@@ -1,0 +1,89 @@
+body {
+    background-color: #aed0f2;
+    color: #2A1E5C;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+}
+
+header {
+    width: 60%;
+    margin: 20px 0;
+}
+
+.content {
+    display: flex;
+    width: 120%;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main {
+    flex: 2;
+    text-align: left;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    /* Apply the new color to the heading titles */
+    color: #6C091F; }
+
+.center-text {
+    text-align: center;
+}
+
+a {
+    color: #6C091F;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+}
+
+.project-header h3 {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: black;
+  color: white;
+}

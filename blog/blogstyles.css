@@ -42,7 +42,7 @@ h1, h2, h3 {
 
 a {
     color: #6C091F;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {

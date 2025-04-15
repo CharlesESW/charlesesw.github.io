@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Charlie's Blog</title>
+<link>https://charliew.net/blog</link>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://charliew.net/RSS.xml" rel="self" type="application/rss+xml" />
+<description>Updates on my Life, Computers and Books</description>
+<item>
+<title>Cataloging My Home Library</title>
+<link>https://charliew.net/blog/cataloging-my-home-library/</link>
+<guid>https://charliew.net/blog/cataloging-my-home-library/</guid>
+<pubDate>Sun, 16 Feb 2025 12:15:12 GMT</pubDate>
+<description>The story of my methods to catalog my home library in Birmingham.</description>
+</item>
+<item>
+<title>My First Blog Post</title>
+<link>https://charliew.net/blog/first-post/</link>
+<guid>https://charliew.net/blog/first-post/</guid>
+<pubDate>Fri, 14 Feb 2025 15:10:45 GMT</pubDate>
+<description>The first blog post I ever made.</description>
+</item>
+</channel>
+</rss>

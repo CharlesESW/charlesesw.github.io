@@ -31,6 +31,17 @@ header {
     }
 }
 
+.main {
+    padding: 15px 15px 15px 30px; /* left-side padding added */
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .main {
+        flex: 3; /* slightly more space for main content */
+    }
+}
+
 .sidebar {
     padding: 15px;
     box-sizing: border-box;
@@ -39,17 +50,7 @@ header {
 @media (min-width: 768px) {
     .sidebar {
         flex: 1;
-    }
-}
-
-.main {
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-@media (min-width: 768px) {
-    .main {
-        flex: 2;
+        max-width: 250px; /* slimmer sidebar */
     }
 }
 

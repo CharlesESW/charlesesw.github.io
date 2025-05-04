@@ -40,7 +40,7 @@ header {
 @media (min-width: 768px) {
     .main {
         flex-grow: 1;
-        padding-left: 40px; /* Adds visible left-side padding */
+        padding-left: 40px;
     }
 }
 
@@ -51,7 +51,7 @@ header {
 
 @media (min-width: 768px) {
     .sidebar {
-        width: 220px;           /* Fixed width to make it slimmer */
+        width: 280px; /* Adjusted from 220px to 280px */
         flex-shrink: 0;
     }
 }

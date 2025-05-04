@@ -28,17 +28,19 @@ header {
 @media (min-width: 768px) {
     .content {
         flex-direction: row;
+        align-items: flex-start;
     }
 }
 
 .main {
-    padding: 15px 15px 15px 30px; /* left-side padding added */
+    padding: 15px;
     box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
     .main {
-        flex: 3; /* slightly more space for main content */
+        flex-grow: 1;
+        padding-left: 40px; /* Adds visible left-side padding */
     }
 }
 
@@ -49,8 +51,8 @@ header {
 
 @media (min-width: 768px) {
     .sidebar {
-        flex: 1;
-        max-width: 250px; /* slimmer sidebar */
+        width: 220px;           /* Fixed width to make it slimmer */
+        flex-shrink: 0;
     }
 }
 

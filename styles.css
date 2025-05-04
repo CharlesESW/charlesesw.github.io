@@ -51,8 +51,9 @@ header {
 
 @media (min-width: 768px) {
     .sidebar {
-        width: 280px; /* Adjusted from 220px to 280px */
+        width: 480px; /* Increased sidebar width */
         flex-shrink: 0;
+        padding-right: 15px; /* Matched right padding */
     }
 }
 

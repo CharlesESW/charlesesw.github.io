@@ -5,7 +5,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    min-height: 100vh;
     line-height: 1.5;
 }
 
@@ -13,29 +13,50 @@ header {
     width: 100%;
     text-align: center;
     margin: 20px 0;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .content {
     display: flex;
     width: 100%;
+    flex: 1;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+    }
 }
 
 .sidebar {
-    flex: 1;
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
 }
 
+@media (min-width: 768px) {
+    .sidebar {
+        flex: 1;
+    }
+}
+
 .main {
-    flex: 2;
-    text-align: left;
-    padding: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .main {
+        flex: 2;
+    }
 }
 
 h1, h2, h3 {
     margin: 10px 0;
-    /* Apply the new color to the heading titles */
-    color: #6C091F; }
+    color: #6C091F;
+}
 
 .center-text {
     text-align: center;
@@ -65,26 +86,60 @@ a:hover {
 }
 
 .topnav {
-  overflow: hidden;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    text-align: center;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-/* Change the color of links on hover */
+@media (min-width: 480px) {
+    .topnav a {
+        padding: 14px 16px;
+        font-size: 17px;
+    }
+}
+
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
+}
+
+.webring-footer {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+.webring-footer p {
+    margin: 0;
+    padding: 0 10px;
+    word-break: break-word;
+}
+
+.webring-footer a {
+    color: #2A1E5C;
+    white-space: nowrap;
+}
+
+.gr_custom_container_1746365601 {
+    max-width: 100%;
+    margin: 0 auto;
 }

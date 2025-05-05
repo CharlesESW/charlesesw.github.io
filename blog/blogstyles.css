@@ -27,18 +27,18 @@ header {
 }
 
 .sidebar {
-    flex: 1;
+    flex: 0.5;
     padding: 10px;
     box-sizing: border-box;
-    /* No border */
 }
 
 .main {
-    flex: 2;
+    flex: 3;
     text-align: left;
     padding: 20px;
     box-sizing: border-box;
 }
+
 
 h1, h2, h3 {
     margin: 10px 0;

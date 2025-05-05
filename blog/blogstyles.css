@@ -16,7 +16,7 @@ header {
 
 .content {
     display: flex;
-    width: 120%;
+    width: 100%;
 }
 
 .sidebar {
@@ -33,8 +33,8 @@ header {
 
 h1, h2, h3 {
     margin: 10px 0;
-    /* Apply the new color to the heading titles */
-    color: #6C091F; }
+    color: #6C091F;
+}
 
 .center-text {
     text-align: center;
@@ -64,26 +64,58 @@ a:hover {
 }
 
 .topnav {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
+}
+
+/* ---------- Desktop styles ---------- */
+@media (min-width: 768px) {
+    .main {
+        border-left: 10px solid #2A1E5C;
+        border-right: 10px solid #2A1E5C;
+    }
+
+    .content {
+        width: 120%;
+    }
+}
+
+/* ---------- Mobile styles ---------- */
+@media (max-width: 767px) {
+    .main {
+        border: none;
+    }
+
+    .content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    header {
+        width: 90%;
+    }
 }

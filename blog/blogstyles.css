@@ -10,25 +10,35 @@ body {
 }
 
 header {
-    width: 60%;
+    width: 100%;
+    max-width: 800px;
     margin: 20px 0;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .content {
     display: flex;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .sidebar {
     flex: 1;
     padding: 10px;
     box-sizing: border-box;
+    border-left: 6px solid #2A1E5C;
+    border-right: 6px solid #2A1E5C;
 }
 
 .main {
     flex: 2;
     text-align: left;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 h1, h2, h3 {
@@ -65,11 +75,14 @@ a:hover {
 
 .topnav {
     overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -88,34 +101,18 @@ a:hover {
     color: white;
 }
 
-/* ---------- Desktop styles ---------- */
-@media (min-width: 768px) {
-    .main {
-        border-left: 10px solid #2A1E5C;
-        border-right: 10px solid #2A1E5C;
-    }
-
-    .content {
-        width: 120%;
-    }
-}
-
-/* ---------- Mobile styles ---------- */
+/* Responsive: remove borders on small screens */
 @media (max-width: 767px) {
-    .main {
+    .sidebar {
         border: none;
     }
 
     .content {
         flex-direction: column;
-        width: 100%;
+        padding: 0 5px;
     }
 
-    .sidebar {
-        display: none;
-    }
-
-    header {
-        width: 90%;
+    .main {
+        padding: 10px;
     }
 }

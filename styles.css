@@ -20,8 +20,8 @@ body {
 
 @media (min-width: 1024px) {
     .page-container {
-        max-width: 900px; /* optional: limit total content width */
-        padding: 0 75px;   /* 5× wider side padding */
+        max-width: 900px;
+        padding: 0 35px;
     }
 }
 

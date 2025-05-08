@@ -1,4 +1,3 @@
-/* Base body styles */
 body {
     background-color: #aed0f2;
     color: #2A1E5C;
@@ -10,10 +9,9 @@ body {
     line-height: 1.5;
 }
 
-/* Container to control page width and side padding */
 .page-container {
     width: 100%;
-    padding: 0 15px; /* default mobile padding */
+    padding: 0 15px;
     box-sizing: border-box;
     margin: 0 auto;
 }
@@ -67,7 +65,7 @@ header {
 
 @media (min-width: 768px) {
     .sidebar {
-        width: 480px; /* Increased sidebar width */
+        width: 480px; 
         flex-shrink: 0;
         padding-right: 15px;
     }

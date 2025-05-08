@@ -6,6 +6,13 @@
 <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://charliew.net/RSS.xml" rel="self" type="application/rss+xml" />
 <description>Updates on my Life, Computers and Books</description>
 <item>
+<title>Ten Pointless Facts About Me</title>
+<link>https://charliew.net/blog/ten-pointless-facts/</link>
+<guid>https://charliew.net/blog/ten-pointless-facts/</guid>
+<pubDate>Thu, 8 May 2025 12:30:00</pubDate>
+<description>My answers to the ten pointless question Abi gave me.</description>
+</item>
+<item>
 <title>Cataloging My Home Library</title>
 <link>https://charliew.net/blog/cataloging-my-home-library/</link>
 <guid>https://charliew.net/blog/cataloging-my-home-library/</guid>

@@ -76,6 +76,10 @@ h1, h2, h3 {
     color: #6C091F;
 }
 
+h3{
+    font-size: 130%;
+}
+
 .center-text {
     text-align: center;
 }

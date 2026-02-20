@@ -8,7 +8,7 @@ PAGE_TITLE = "Charlie's Books"
 
 # Shelves to exclude from the tag display and filter
 # (these are Goodreads system shelves, not user-created genre tags)
-EXCLUDE_SHELVES = {"read", "currently-reading", "to-read"}
+EXCLUDE_SHELVES = {"read", "currently-reading", "to-read", "wanna-reread", "audiobooked", "kindled", "loaned", "libraried"}
 
 # ===== HELPER FUNCTION FOR STARS =====
 def rating_to_stars(rating):

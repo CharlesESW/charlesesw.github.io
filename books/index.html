@@ -109,194 +109,509 @@
       <h1>Recent Book Reviews</h1>
     </header>
     <div class="content">
-        <div class="sidebar"></div>
-        <div class="main">
+      <div class="sidebar"></div>
+      <div class="main">
+        <div class="shelf-filter">
+          <span class="shelf-filter-label">Filter by shelf:</span>
+          <button class="shelf-btn" data-shelf="anthology-collection">
+            <span>anthology-collection</span>
+          </button>
+          <button class="shelf-btn" data-shelf="arc"><span>arc</span></button>
+          <button class="shelf-btn" data-shelf="auto-biography"><span>auto-biography</span></button>
+          <button class="shelf-btn" data-shelf="book-club"><span>book-club</span></button>
+          <button class="shelf-btn" data-shelf="classics"><span>classics</span></button>
+          <button class="shelf-btn" data-shelf="comics"><span>comics</span></button>
+          <button class="shelf-btn" data-shelf="cyberpunk"><span>cyberpunk</span></button>
+          <button class="shelf-btn" data-shelf="discworld"><span>discworld</span></button>
+          <button class="shelf-btn" data-shelf="dystopia"><span>dystopia</span></button>
+          <button class="shelf-btn" data-shelf="fiction"><span>fiction</span></button>
+          <button class="shelf-btn" data-shelf="for-school"><span>for-school</span></button>
+          <button class="shelf-btn" data-shelf="high-fantasy"><span>high-fantasy</span></button>
+          <button class="shelf-btn" data-shelf="horror"><span>horror</span></button>
+          <button class="shelf-btn" data-shelf="lgbtq"><span>lgbtq</span></button>
+          <button class="shelf-btn" data-shelf="lit-fic"><span>lit-fic</span></button>
+          <button class="shelf-btn" data-shelf="low-fantasy"><span>low-fantasy</span></button>
+          <button class="shelf-btn" data-shelf="mystery"><span>mystery</span></button>
+          <button class="shelf-btn" data-shelf="non-fiction"><span>non-fiction</span></button>
+          <button class="shelf-btn" data-shelf="owned"><span>owned</span></button>
+          <button class="shelf-btn" data-shelf="poetry"><span>poetry</span></button>
+          <button class="shelf-btn" data-shelf="read-in-2025"><span>read-in-2025</span></button>
+          <button class="shelf-btn" data-shelf="read-in-2026"><span>read-in-2026</span></button>
+          <button class="shelf-btn" data-shelf="science-fiction">
+            <span>science-fiction</span>
+          </button>
+          <button class="shelf-btn" data-shelf="sf-masterworks"><span>sf-masterworks</span></button>
+          <button class="shelf-btn" data-shelf="spy"><span>spy</span></button>
+          <button id="clear-filter">clear</button>
+        </div>
+        <p id="no-results">No books match all selected shelves.</p>
 
-<div class="shelf-filter">
-    <span class="shelf-filter-label">Filter by shelf:</span>
-        <button class="shelf-btn" data-shelf="anthology-collection"><span>anthology-collection</span></button>
-        <button class="shelf-btn" data-shelf="arc"><span>arc</span></button>
-        <button class="shelf-btn" data-shelf="auto-biography"><span>auto-biography</span></button>
-        <button class="shelf-btn" data-shelf="book-club"><span>book-club</span></button>
-        <button class="shelf-btn" data-shelf="classics"><span>classics</span></button>
-        <button class="shelf-btn" data-shelf="comics"><span>comics</span></button>
-        <button class="shelf-btn" data-shelf="cyberpunk"><span>cyberpunk</span></button>
-        <button class="shelf-btn" data-shelf="discworld"><span>discworld</span></button>
-        <button class="shelf-btn" data-shelf="dystopia"><span>dystopia</span></button>
-        <button class="shelf-btn" data-shelf="fiction"><span>fiction</span></button>
-        <button class="shelf-btn" data-shelf="for-school"><span>for-school</span></button>
-        <button class="shelf-btn" data-shelf="high-fantasy"><span>high-fantasy</span></button>
-        <button class="shelf-btn" data-shelf="horror"><span>horror</span></button>
-        <button class="shelf-btn" data-shelf="lgbtq"><span>lgbtq</span></button>
-        <button class="shelf-btn" data-shelf="lit-fic"><span>lit-fic</span></button>
-        <button class="shelf-btn" data-shelf="low-fantasy"><span>low-fantasy</span></button>
-        <button class="shelf-btn" data-shelf="mystery"><span>mystery</span></button>
-        <button class="shelf-btn" data-shelf="non-fiction"><span>non-fiction</span></button>
-        <button class="shelf-btn" data-shelf="owned"><span>owned</span></button>
-        <button class="shelf-btn" data-shelf="poetry"><span>poetry</span></button>
-        <button class="shelf-btn" data-shelf="read-in-2025"><span>read-in-2025</span></button>
-        <button class="shelf-btn" data-shelf="read-in-2026"><span>read-in-2026</span></button>
-        <button class="shelf-btn" data-shelf="science-fiction"><span>science-fiction</span></button>
-        <button class="shelf-btn" data-shelf="sf-masterworks"><span>sf-masterworks</span></button>
-        <button class="shelf-btn" data-shelf="spy"><span>spy</span></button>
-    <button id="clear-filter">clear</button>
-</div>
-<p id="no-results">No books match all selected shelves.</p>
+        <details class="bookbox" data-shelves="book-club fiction lgbtq mystery owned read-in-2026">
+          <summary>
+            <strong>Scorched Grace (Sister Holiday Mystery #1)</strong> by Margot Douaihy<br />
+            My rating: ★★★★★<br />
+            <span class="shelf-tag">book-club</span><span class="shelf-tag">fiction</span
+            ><span class="shelf-tag">lgbtq</span><span class="shelf-tag">mystery</span
+            ><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            Quite a change of pace with this one. I was quite surprised when the mostly middle aged
+            crime book club members voted unanimously for a book about a heavily tattooed queer nun
+            but I guess that goes to show what I know about these things. The book definitely
+            delivered on that blurb and more; In fact I do think they ought to mention the murders
+            there as well as I don’t think an arson investigation had the same ring to it. I think
+            what positively surprised me the most though was that she kept Sister Holiday genuinely
+            devout in the book. Not that I am someone who needs my protagonists to be Christian but
+            I did worry going into it that the nun aspect of the character would just be a sort of
+            costume to make it sound cool rather than something genuinely core to the narrative.
+            This choice made her a far more compelling character as we clearly see how the clash of
+            her life before and during the vocation impact her choices throughout the novel. This
+            willingness to let the characters have internal conflict was present in many other
+            figures and elevated the narrative from just a fun mystery into a genuinely thoughtful
+            piece of work. I’d definitely recommend it if you like mystery fiction
+          </div>
+        </details>
 
+        <details class="bookbox" data-shelves="fiction lit-fic owned read-in-2026">
+          <summary>
+            <strong>The Wind-Up Bird Chronicle</strong> by Haruki Murakami<br />
+            My rating: ★★★★★<br />
+            <span class="shelf-tag">fiction</span><span class="shelf-tag">lit-fic</span
+            ><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            This was my second book by Murakami after Kafka on the shore and found it to be even
+            better. I don’t think I’ve read any other books that have the same vibe as his writings
+            and that makes them such an enjoyable experience. In this we follow an out of work legal
+            secretary, Toru Okada, as he tries to find his missing cat and then gets involved in a
+            variety of strange situations. The surrounding characters really drive the narrative
+            here, each having a variety of oddities that make them instantly memorable. Though this
+            was an undeniably strange book I found it easier to understand how the strangeness
+            connected to the themes than KOTS, and I’m proud to say I was able to even predict where
+            the narrative would go. I think that by not feeling bound to explaining what the psychic
+            powers actually do he was able to focus on their impacts on people which kept the
+            narrative mobile and made it easier for me to understand what he wanted us to take away
+            when they come up. Unfortunately a lot of it I can’t discuss as it spoils important
+            parts but the development of the relationship between Toru, Kumiko (his wife) and Noboru
+            Wataya (her brother) showed Murakami’s prowess for writing realistic and human dynamics.
+            For that matter the writing in the letter segments felt so real to me I’d believe they
+            were actually taken from real life. You don’t really notice when written dialogue isn’t
+            entirely realistic until books like this come along and show you what you’re missing. I
+            definitely recommend it to any kind of reader as I think there’s something for everyone.
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="book-club fiction lgbtq mystery owned read-in-2026">
-    <summary>
-        <strong>Scorched Grace (Sister Holiday Mystery #1)</strong> by Margot Douaihy<br/>
-        My rating: ★★★★★<br/>
-        <span class="shelf-tag">book-club</span><span class="shelf-tag">fiction</span><span class="shelf-tag">lgbtq</span><span class="shelf-tag">mystery</span><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        Quite a change of pace with this one. I was quite surprised when the mostly middle aged crime book club members voted unanimously for a book about a heavily tattooed queer nun but I guess that goes to show what I know about these things. The book definitely delivered on that blurb and more; In fact I do think they ought to mention the murders there as well as I don’t think an arson investigation had the same ring to it. I think what positively surprised me the most though was that she kept Sister Holiday genuinely devout in the book. Not that I am someone who needs my protagonists to be Christian but I did worry going into it that the nun aspect of the character would just be a sort of costume to make it sound cool rather than something genuinely core to the narrative. This choice made her a far more compelling character as we clearly see how the clash of her life before and during the vocation impact her choices throughout the novel. This willingness to let the characters have internal conflict was present in many other figures and elevated the narrative from just a fun mystery into a genuinely thoughtful piece of work. I’d definitely recommend it if you like mystery fiction
-    </div>
-</details>
+        <details class="bookbox" data-shelves="classics fiction owned read-in-2026">
+          <summary>
+            <strong>Catch-22</strong> by Joseph Heller<br />
+            My rating: ★★★★☆<br />
+            <span class="shelf-tag">classics</span><span class="shelf-tag">fiction</span
+            ><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            I found this started a little haphazardly and took a while to find its feet, but when it
+            did it provided a scathing satire of the military. Following a non linear timeline we
+            get snippets of the experiences of the 256th air squadron as they complete their
+            required bombing runs. At first I thought it was just going to be a sketch comedy book
+            as none of the stories seemed to really connect together but about halfway they did
+            decide to start building the broader picture of the situation. Only near the end did the
+            tone really start to change to show that while things might have been presented light
+            heartedly initially when you actually consider all the things that happened to yossarian
+            it makes perfect sense that he’d do anything to avoid going up ever again.<br /><br />I’ve
+            been on a bit of a WWII kick with this and Cryptonomicon which strongly contrasted the
+            incompetence of leadership shown here, evidently they should have put mathematicians in
+            charge of the American army too and things would have gone better. <br /><br />I think
+            my favourite arc would be Milo’s syndicate as you start to see just how deep the
+            corruption goes within the hierarchy and the things he can get away with.<br /><br />This
+            was definitely a worthwhile read and I’m glad I’m not in the us army
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="fiction lit-fic owned read-in-2026">
-    <summary>
-        <strong>The Wind-Up Bird Chronicle</strong> by Haruki Murakami<br/>
-        My rating: ★★★★★<br/>
-        <span class="shelf-tag">fiction</span><span class="shelf-tag">lit-fic</span><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        This was my second book by Murakami after Kafka on the shore and found it to be even better. I don’t think I’ve read any other books that have the same vibe as his writings and that makes them such an enjoyable experience. In this we follow an out of work legal secretary, Toru Okada, as he tries to find his missing cat and then gets involved in a variety of strange situations. The surrounding characters really drive the narrative here, each having a variety of oddities that make them instantly memorable. Though this was an undeniably strange book I found it easier to understand how the strangeness connected to the themes than KOTS, and I’m proud to say I was able to even predict where the narrative would go. I think that by not feeling bound to explaining what the psychic powers actually do he was able to focus on their impacts on people which kept the narrative mobile and made it easier for me to understand what he wanted us to take away when they come up. Unfortunately a lot of it I can’t discuss as it spoils important parts but the development of the relationship between Toru, Kumiko (his wife) and Noboru Wataya (her brother) showed Murakami’s prowess for writing realistic and human dynamics. For that matter the writing in the letter segments felt so real to me I’d believe they were actually taken from real life. You don’t really notice when written dialogue isn’t entirely realistic until books like this come along and show you what you’re missing. I definitely recommend it to any kind of reader as I think there’s something for everyone.
-    </div>
-</details>
+        <details class="bookbox" data-shelves="owned fiction read-in-2026 science-fiction">
+          <summary>
+            <strong>The Black Locomotive</strong> by Rian Hughes<br />
+            My rating: ★★★☆☆<br />
+            <span class="shelf-tag">owned</span><span class="shelf-tag">fiction</span
+            ><span class="shelf-tag">read-in-2026</span
+            ><span class="shelf-tag">science-fiction</span>
+          </summary>
+          <div class="review">
+            I think my expectations were too high going into this which led to me feeling
+            disappointed. When I read XX I immediately knew Rian Hughes was the most creative author
+            I’d ever read when it comes to fonts and formatting, and while that remained true he
+            toned down the usage in this. In XX the story could not work without the unique fonts
+            and design choices as they were very much at the core of the story. In contract here
+            they played a background role, used to indicate which perspective we are following or
+            which character is speaking. While this is still something I’ve rarely seen done but I
+            definitely have seen it done by other authors so I feel like it takes away from the
+            uniqueness of his style. I think it’s entirely possible given this is only his second
+            novel that he didn’t want to be stuck with one gimmick for his career given he is
+            clearly very talented in many areas. But then I think he should have stuck with just
+            keeping it as background choices rather than also having 10 or so pages where he does go
+            all out with full page fonts that look like cityscapes or galaxies which made me just
+            want more of that.<br /><br />Books are not only a graphical medium so I think I should
+            also review the plot, which I found to be a middling. Perhaps I’ve become too used to
+            reading great epics because I feel like not much really happened until near to the end
+            and then it just kind of stopped with very little resolution. I did also find it a
+            little hard to believe that a railway enthusiasts society would actually secretly have
+            so much influence over people that they drop what they are doing to help a random person
+            but maybe I’m just not well versed in trainspotter commitment. The concept was
+            definitely engaging and I think this could be ripe for a sequel as I think I would like
+            to see what happens next.<br /><br />All together it was en enjoyable read but left me
+            feeling like it was a step down from XX overall so I’d recommend you read that instead.
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="classics fiction owned read-in-2026">
-    <summary>
-        <strong>Catch-22</strong> by Joseph Heller<br/>
-        My rating: ★★★★☆<br/>
-        <span class="shelf-tag">classics</span><span class="shelf-tag">fiction</span><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        I found this started a little haphazardly and took a while to find its feet, but when it did it provided a scathing satire of the military. Following a non linear timeline we get snippets of the experiences of the 256th air squadron as they complete their required bombing runs.  At first I thought it was just going to be a sketch comedy book as none of the stories seemed to really connect together but about halfway they did decide to start building the broader picture of the situation. Only near the end did the tone really start to change to show that while things might have been presented light heartedly initially when you actually consider all the things that happened to yossarian it makes perfect sense that he’d do anything to avoid going up ever again.<br/><br/>I’ve been on a bit of a WWII kick with this and Cryptonomicon which strongly contrasted the incompetence of leadership shown here, evidently they should have put mathematicians in charge of the American army too and things would have gone better. <br/><br/>I think my favourite arc would be Milo’s syndicate as you start to see just how deep the corruption goes within the hierarchy and the things he can get away with.<br/><br/>This was definitely a worthwhile read and I’m glad I’m not in the us army
-    </div>
-</details>
+        <details class="bookbox" data-shelves="discworld fiction high-fantasy read-in-2026 owned">
+          <summary>
+            <strong>Wyrd Sisters (Discworld, #6; Witches, #2)</strong> by Terry Pratchett<br />
+            My rating: ★★★★★<br />
+            <span class="shelf-tag">discworld</span><span class="shelf-tag">fiction</span
+            ><span class="shelf-tag">high-fantasy</span><span class="shelf-tag">read-in-2026</span
+            ><span class="shelf-tag">owned</span>
+          </summary>
+          <div class="review">
+            Pratchett has outdone himself with this, which is definitely my favourite so far. It’s a
+            very loose retelling of Macbeth from the perspective of the witches with a discworld
+            spin to it of course. He even managed to slip in references to other Shakespeare works
+            like sonnet 18. The Wyrd sisters play off of each other so well and kept the story
+            thoroughly funny. I think the structure of a parody ensured the narrative had more
+            direction which was something I felt some previous works lacked. Definitely a good read
+            and I think a good starting point for the whole series as well
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="owned fiction read-in-2026 science-fiction">
-    <summary>
-        <strong>The Black Locomotive</strong> by Rian Hughes<br/>
-        My rating: ★★★☆☆<br/>
-        <span class="shelf-tag">owned</span><span class="shelf-tag">fiction</span><span class="shelf-tag">read-in-2026</span><span class="shelf-tag">science-fiction</span>
-    </summary>
-    <div class="review">
-        I think my expectations were too high going into this which led to me feeling disappointed. When I read XX I immediately knew Rian Hughes was the most creative author I’d ever read when it comes to fonts and formatting, and while that remained true he toned down the usage in this. In XX the story could not work without the unique fonts and design choices as they were very much at the core of the story. In contract here they played a background role, used to indicate which perspective we are following or which character is speaking. While this is still something I’ve rarely seen done but I definitely have seen it done by other authors so I feel like it takes away from the uniqueness of his style. I think it’s entirely possible given this is only his second novel that he didn’t want to be stuck with one gimmick for his career given he is clearly very talented in many areas. But then I think he should have stuck with just keeping it as background choices rather than also having 10 or so pages where he does go all out with full page fonts that look like cityscapes or galaxies which made me just want more of that.<br/><br/>Books are not only a graphical medium so I think I should also review the plot, which I found to be a middling. Perhaps I’ve become too used to reading great epics because I feel like not much really happened until near to the end and then it just kind of stopped with very little resolution. I did also find it a little hard to believe that a railway enthusiasts society would actually secretly have so much influence over people that they drop what they are doing to help a random person but maybe I’m just not well versed in trainspotter commitment. The concept was definitely engaging and I think this could be ripe for a sequel as I think I would like to see what happens next.<br/><br/>All together it was en enjoyable read but left me feeling like it was a step down from XX overall so I’d recommend you read that instead.
-    </div>
-</details>
+        <details class="bookbox" data-shelves="science-fiction fiction owned read-in-2026">
+          <summary>
+            <strong>Cryptonomicon</strong> by Neal Stephenson<br />
+            My rating: ★★★★☆<br />
+            <span class="shelf-tag">science-fiction</span><span class="shelf-tag">fiction</span
+            ><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            I'd like to start by thanking my friend Sofia for recommending me this novel, as it was
+            undoubtably a worthwhile read even if I don't think it quite lived up to the
+            expectations I had. <br />Starting with the positives I think this might have contained
+            the most technical information of any (fiction) book I've ever read, mostly on
+            cryptography but also straying into the science of post-nut clarity and mine design. The
+            most interesting information for me was about the applications of Van Eck Phreaking to
+            side channel displays, as I had previously researched it's capacity to exfiltrate
+            keyboard data for my thesis. Dumping information on the reader is definitely a common
+            practice for Stephenson so I am glad that in this it was focused on areas that were
+            already of interest to me. <br /><br />Of course a fiction book cannot only be made up
+            of real world information so the plot also needed to hold up well. For the majority of
+            the book I definitely think it did, weaving a complex narrative between 2 timeframes and
+            a great many POVs to build an expansive picture of both wartime espionage and 90s
+            internet startups. These might not seem to be very related things but this book assures
+            you they might as well be the same thing. A core part of this symmetry is that the 90s
+            characters are the grandchildren of the 40s characters, which while at times confusing
+            with names, enables the narrative to be built together from both directions until the
+            end. The end unfortunately is where this book fell short for me, as I felt it left
+            behind what I considered to be the more interesting plot threads to follow a generic and
+            anticlimactic finale. I can't deny that the characters sort of achieved their goals
+            throughout the novel but only through an option that didn't exist for the majority of
+            the narrative. The characters themselves offered a wide variety of experiences and
+            lifestyles, from a nipponese (Stephenson's way of saying Japanese) soldier in WWII to an
+            American entrepreneur. Through the 40s perspectives Stephenson drives home a message of
+            the pointlessness of war, and even in the 90s the same battles are waging on
+            economically instead of militarily. <br /><br />If you are reading this and still asking
+            yourself if this is the book for you I think the answer I have to give is only if you
+            have a passion for cryptography.
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="discworld fiction high-fantasy read-in-2026 owned">
-    <summary>
-        <strong>Wyrd Sisters (Discworld, #6; Witches, #2)</strong> by Terry Pratchett<br/>
-        My rating: ★★★★★<br/>
-        <span class="shelf-tag">discworld</span><span class="shelf-tag">fiction</span><span class="shelf-tag">high-fantasy</span><span class="shelf-tag">read-in-2026</span><span class="shelf-tag">owned</span>
-    </summary>
-    <div class="review">
-        Pratchett has outdone himself with this, which is definitely my favourite so far. It’s a very loose retelling of Macbeth from the perspective of the witches with a discworld spin to it of course. He even managed to slip in references to other Shakespeare works like sonnet 18. The Wyrd sisters play off of each other so well and kept the story thoroughly funny. I think the structure of a parody ensured the narrative had more direction which was something I felt some previous works lacked. Definitely a good read and I think a good starting point for the whole series as well
-    </div>
-</details>
+        <details class="bookbox" data-shelves="fiction owned science-fiction read-in-2026">
+          <summary>
+            <strong>Use of Weapons (Culture, #3)</strong> by Iain M. Banks<br />
+            My rating: ★★★★☆<br />
+            <span class="shelf-tag">fiction</span><span class="shelf-tag">owned</span
+            ><span class="shelf-tag">science-fiction</span
+            ><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            Whenever I read them I always find that the culture novels inhabit such a unique section
+            of space opera and science fiction with its setting. The culture itself is a
+            post-scarcity intergalactic society which enables it's inhabitants to live in complete
+            freedom as supersentient machines do all the work. Banks himself described it as his
+            personal utopia when interviewed, which isn't a concept you see too often in speculative
+            fiction. <br /><br />Unfortunately utopia doesn't lend itself very well to engaging
+            stories so this novel, like the previous two, focuses instead on the actions of people
+            who choose to work on reaching out to other societies in the universe, known as contact.
+            What I found made this stand out more than the others is that Banks was finally willing
+            to dig into the deeper questions about the ethics of interfering with societies who are
+            almost always less advanced. In this we follow members of the 'special circumstances'
+            team who beyond the observation and diplomacy of contact also engage in putting their
+            thumb on the scales of wars and political maneuvering whether that be by giving them
+            weapons more advanced than before or through preventing aging. They proclaim to only do
+            this for the greater good, in this book to help the side that wants to give ai equal
+            rights as humans since they are 'alive'. It is pointed out by a member of the less
+            advanced society that they pick and choose solely based on what they already did, why is
+            it more important to the culture to ensure that ai have equal rights on this singular
+            planet than the many other issues they could be stopping with their far superior
+            technology. This is perhaps more relevant to me in reference to recent affairs where
+            militarily superior countries proclaim they do things for the good of the people they
+            are invading but turn blind eyes everything else. <br /><br />But enough about the
+            philosophy of interventionism, the structure of this novel was vey interesting,
+            alternating chapters going forwards and backwards from the start as we find out more
+            about Zakalwe's history alongside what he's doing in the present. Interestingly at the
+            end I felt it reminded me greatly of Chasm City, in more ways than one. Using this
+            structure he was able to set up reveals very well, as we slowly went through the layers
+            of the past getting more information without clunky flashbacks at convenient times.
+            Zakalwe was a very complex character clearly weighed down by a life of moving between
+            wars, most evidenced by his hatred of chairs which was very well explained.
+            <br /><br />Fortunately you don't need to read the books in any order so you can pick
+            this up right now!
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="science-fiction fiction owned read-in-2026">
-    <summary>
-        <strong>Cryptonomicon</strong> by Neal Stephenson<br/>
-        My rating: ★★★★☆<br/>
-        <span class="shelf-tag">science-fiction</span><span class="shelf-tag">fiction</span><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        I'd like to start by thanking my friend Sofia for recommending me this novel, as it was undoubtably a worthwhile read even if I don't think it quite lived up to the expectations I had. <br/>Starting with the positives I think this might have contained the most technical information of any (fiction) book I've ever read, mostly on cryptography but also straying into the science of post-nut clarity and mine design. The most interesting information for me was about the applications of Van Eck Phreaking to side channel displays, as I had previously researched it's capacity to exfiltrate keyboard data for my thesis. Dumping information on the reader is definitely a common practice for Stephenson so I am glad that in this it was focused on areas that were already of interest to me. <br/><br/>Of course a fiction book cannot only be made up of real world information so the plot also needed to hold up well. For the majority of the book I definitely think it did, weaving a complex narrative between 2 timeframes and a great many POVs to build an expansive picture of both wartime espionage and 90s internet startups. These might not seem to be very related things but this book assures you they might as well be the same thing. A core part of this symmetry is that the 90s characters are the grandchildren of the 40s characters, which while at times confusing with names, enables the narrative to be built together from both directions until the end. The end unfortunately is where this book fell short for me, as I felt it left behind what I considered to be the more interesting plot threads to follow a generic and anticlimactic finale. I can't deny that the characters sort of achieved their goals throughout the novel but only through an option that didn't exist for the majority of the narrative. The characters themselves offered a wide variety of experiences and lifestyles, from a nipponese (Stephenson's way of saying Japanese) soldier in WWII to an American entrepreneur. Through the 40s perspectives Stephenson drives home a message of the pointlessness of war, and even in the 90s the same battles are waging on economically instead of militarily. <br/><br/>If you are reading this and still asking yourself if this is the book for you I think the answer I have to give is only if you have a passion for cryptography.
-    </div>
-</details>
+        <details class="bookbox" data-shelves="classics fiction owned read-in-2026">
+          <summary>
+            <strong>Remembrance of Things Past: Volume 1</strong> by Marcel Proust<br />
+            My rating: ★★★★☆<br />
+            <span class="shelf-tag">classics</span><span class="shelf-tag">fiction</span
+            ><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            For such a long and dense book I found this to be quite an easy read to get through,
+            even though it required slower and more considered parsing than my usual choices. What
+            matters most is that I didn't dread picking it up every evening so that's hopefully a
+            good sign you too should give it a go. Importantly for this review however, this volume
+            contains less than 1/3 of the novel so I cannot truly judge the story as a whole.<br /><br />We
+            follow our narrator, a stand-in for Proust, between roughly the ages of 6-21 as he comes
+            to experience different aspects of upper class French life. A key part is that we are
+            learning all of this from the memory of the older Marcel, unlocked through different
+            experiences. Supposedly quite famously, though I'd never heard of it before, a key part
+            of this memory comes back when he eats a madeleine dipped in tea, reminding him of when
+            he did that as a child and bringing back the surrounding summer experiences. I found
+            that by nature of this all being memory, I needed to be willing to question the order of
+            events as presented to us; This was most notable to me within the second part of the
+            volume when we focus more on his development from childhood to a young adult as we are
+            told that within the same summer that he needed to be escorted to a public toilet by his
+            housekeeper he is also taken by his friend to a brothel, where he then chooses to donate
+            his aunt's furniture. This is of course the nature of remembering things so far in the
+            past, they tend to bundle together which goes to demonstrate either Proust thought very
+            hard about this choice, or perhaps not at all. <br /><br />I found my favourite section
+            of the volume was the intermission we get to investigate the past of Charles Swann, a
+            family friend and key figure in the story. Though I am sure we will get much more as
+            Marcel grows older, so far this alone has given us an adult perspective into the
+            absurdism present in aristocratic circles, as Swann must move at the whim of those more
+            respectable than him, until at last he breaks away to enjoy the simpler and less refined
+            company of Odette with whom he falls in love. Love is a very important theme in this
+            volume because as Marcel escapes childhood he moves onto a desire to find love, and goes
+            about it in some inadvisable ways. His first pursuit was Gilberte, Swann's daughter, who
+            he obsesses over until on a whim he decides she's annoyed him and won't ever speak to
+            her again until she writes to apologise (this has yet to happen). This oddity continues
+            when he goes to the beach for the summer and sees a group of girls whom he obsesses over
+            for weeks until he finds someone who knows them to introduce him. Proust makes it clear
+            though that neither of these two instances were truly love, the first I'd say is more
+            lustful, indicated when he orgasms whilst innocently wrestling with her. The second is
+            harder to place as he proclaims to love the whole group, and whichever one he sees at
+            any one time he decides is the one he wants most. Neither instance show him as a man who
+            is ready to love, perhaps because of his sheltered upbringing but I do hope we will see
+            some change going forwards.<br /><br />The final thing that I found incredible which I
+            cannot truly get across in a review is how closely woven together each aspect of the
+            story is. I suppose that aristocratic circles were not particularly large but the
+            ability to tie together all the characters to each other throughout the book shows a
+            strong commitment to more than just the development of his own story. <br /><br />I look
+            forward to reading the next part of the story but I don't imagine it will be very soon
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="fiction owned science-fiction read-in-2026">
-    <summary>
-        <strong>Use of Weapons (Culture, #3)</strong> by Iain M. Banks<br/>
-        My rating: ★★★★☆<br/>
-        <span class="shelf-tag">fiction</span><span class="shelf-tag">owned</span><span class="shelf-tag">science-fiction</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        Whenever I read them I always find that the culture novels inhabit such a unique section of space opera and science fiction with its setting. The culture itself is a post-scarcity intergalactic society which enables it's inhabitants to live in complete freedom as supersentient machines do all the work. Banks himself described it as his personal utopia when interviewed, which isn't a concept you see too often in speculative fiction. <br/><br/>Unfortunately utopia doesn't lend itself very well to engaging stories so this novel, like the previous two, focuses instead on the actions of people who choose to work on reaching out to other societies in the universe, known as contact. What I found made this stand out more than the others is that Banks was finally willing to dig into the deeper questions about the ethics of interfering with societies who are almost always less advanced. In this we follow members of the 'special circumstances' team who beyond the observation and diplomacy of contact also engage in putting their thumb on the scales of wars and political maneuvering whether that be by giving them weapons more advanced than before or through preventing aging. They proclaim to only do this for the greater good, in this book to help the side that wants to give ai equal rights as humans since they are 'alive'. It is pointed out by a member of the less advanced society that they pick and choose solely based on what they already did, why is it more important to the culture to ensure that ai have equal rights on this singular planet than the many other issues they could be stopping with their far superior technology. This is perhaps more relevant to me in reference to recent affairs where militarily superior countries proclaim they do things for the good of the people they are invading but turn blind eyes everything else. <br/><br/>But enough about the philosophy of interventionism, the structure of this novel was vey interesting, alternating chapters going forwards and backwards from the start as we find out more about Zakalwe's history alongside what he's doing in the present. Interestingly at the end I felt it reminded me greatly of Chasm City, in more ways than one. Using this structure he was able to set up reveals very well, as we slowly went through the layers of the past getting more information without clunky flashbacks at convenient times. Zakalwe was a very complex character clearly weighed down by a life of moving between wars, most evidenced by his hatred of chairs which was very well explained. <br/><br/>Fortunately you don't need to read the books in any order so you can pick this up right now!
-    </div>
-</details>
+        <details
+          class="bookbox"
+          data-shelves="dystopia fiction lit-fic owned read-in-2026 science-fiction"
+        >
+          <summary>
+            <strong>The Employees</strong> by Olga Ravn<br />
+            My rating: ★★★☆☆<br />
+            <span class="shelf-tag">dystopia</span><span class="shelf-tag">fiction</span
+            ><span class="shelf-tag">lit-fic</span><span class="shelf-tag">owned</span
+            ><span class="shelf-tag">read-in-2026</span
+            ><span class="shelf-tag">science-fiction</span>
+          </summary>
+          <div class="review">
+            This is another one from my new source of book recs, the Waterstones manager, as a
+            suggestion for the next book club book. It’s undeniably a transgressive novel as the
+            narrative structure is unlike other books I’ve read. Unfortunately this structure, a
+            collection of employee statements to the ship HR, doesn’t lend itself to an easy to
+            follow plot. What also didn’t help is that there’s basically no character names, or even
+            really characters, in the statements so it can’t really be a character driven novel
+            either. What really drives it then is the textural descriptions and analysis of the
+            human condition as we hear how the employees react to the mysterious objects they have
+            found. Where she excelled was the subtle way we could distinguish between the humans and
+            humanoids (lab grown humans) by how they respond to the sensory experiences imparted
+            upon them by the objects; The humans were forced into nostalgia for earth where they
+            think they remember having the same smells and textures, but the humanoids, who have no
+            experiences of earth, instead look forwards to the future and dream about what this will
+            mean for them in the future. Her style of writing was done so well that even on
+            inconsequential statements given (which I will reiterate are never labelled with who
+            said them) you can tell by tone of voice if the speaker was human… or perhaps you can’t
+            and I’m just assuming. This is because another key theme was of course that given the
+            humanoids are materially identical to humans can it really be said that just because
+            they were grown and programmed they are innately different after they have had so much
+            time to grow and adapt beyond their programming. <br /><br />Probably the most important
+            theme given the title was of course on the nature of employment, it is made clear
+            through the statements that life aboard the ship is solely about productivity, everyone
+            being just part of the production line and the humanoids initially having no concept of
+            what life could be possibly like if you weren’t working. I think that’s a theme I will
+            leave to you to glean from the text yourself though because I can’t give you all the
+            answers
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="classics fiction owned read-in-2026">
-    <summary>
-        <strong>Remembrance of Things Past: Volume 1</strong> by Marcel Proust<br/>
-        My rating: ★★★★☆<br/>
-        <span class="shelf-tag">classics</span><span class="shelf-tag">fiction</span><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        For such a long and dense book I found this to be quite an easy read to get through, even though it required slower and more considered parsing than my usual choices. What matters most is that I didn't dread picking it up every evening so that's hopefully a good sign you too should give it a go. Importantly for this review however, this volume contains less than 1/3 of the novel so I cannot truly judge the story as a whole.<br/><br/>We follow our narrator, a stand-in for Proust, between roughly the ages of 6-21 as he comes to experience different aspects of upper class French life. A key part is that we are learning all of this from the memory of the older Marcel, unlocked through different experiences. Supposedly quite famously, though I'd never heard of it before, a key part of this memory comes back when he eats a madeleine dipped in tea, reminding him of when he did that as a child and bringing back the surrounding summer experiences. I found that by nature of this all being memory, I needed to be willing to question the order of events as presented to us; This was most notable to me within the second part of the volume when we focus more on his development from childhood to a young adult as we are told that within the same summer that he needed to be escorted to a public toilet by his housekeeper he is also taken by his friend to a brothel, where he then chooses to donate his aunt's furniture. This is of course the nature of remembering things so far in the past, they tend to bundle together which goes to demonstrate either Proust thought very hard about this choice, or perhaps not at all. <br/><br/>I found my favourite section of the volume was the intermission we get to investigate the past of Charles Swann, a family friend and key figure in the story. Though I am sure we will get much more as Marcel grows older, so far this alone has given us an adult perspective into the absurdism present in aristocratic circles, as Swann must move at the whim of those more respectable than him, until at last he breaks away to enjoy the simpler and less refined company of Odette with whom he falls in love. Love is a very important theme in this volume because as Marcel escapes childhood he moves onto a desire to find love, and goes about it in some inadvisable ways. His first pursuit was Gilberte, Swann's daughter, who he obsesses over until on a whim he decides she's annoyed him and won't ever speak to her again until she writes to apologise (this has yet to happen). This oddity continues when he goes to the beach for the summer and sees a group of girls whom he obsesses over for weeks until he finds someone who knows them to introduce him. Proust makes it clear though that neither of these two instances were truly love, the first I'd say is more lustful, indicated when he orgasms whilst innocently wrestling with her. The second is harder to place as he proclaims to love the whole group, and whichever one he sees at any one time he decides is the one he wants most. Neither instance show him as a man who is ready to love, perhaps because of his sheltered upbringing but I do hope we will see some change going forwards.<br/><br/>The final thing that I found incredible which I cannot truly get across in a review is how closely woven together each aspect of the story is. I suppose that aristocratic circles were not particularly large but the ability to tie together all the characters to each other throughout the book shows a strong commitment to more than just the development of his own story. <br/><br/>I look forward to reading the next part of the story but I don't imagine it will be very soon
-    </div>
-</details>
+        <details class="bookbox" data-shelves="owned discworld fiction high-fantasy read-in-2026">
+          <summary>
+            <strong>Sourcery (Discworld, #5)</strong> by Terry Pratchett<br />
+            My rating: ★★★☆☆<br />
+            <span class="shelf-tag">owned</span><span class="shelf-tag">discworld</span
+            ><span class="shelf-tag">fiction</span><span class="shelf-tag">high-fantasy</span
+            ><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            Coming off the back of equal rites and mort I had higher hopes for this. While it’s
+            impressive that Pratchett is able to change tones between different subseries within
+            discworld so cleanly, I think the rincewinds just don’t work for me as they prioritise
+            being vessels to connect together jokes rather than character/plot driven narratives.
+            Perhaps you could say I’m too old to be reading discworld which makes me take them more
+            seriously than I ought to but the death and witches series didn’t have these problems so
+            I’m not sure it’s as simple as that.
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="dystopia fiction lit-fic owned read-in-2026 science-fiction">
-    <summary>
-        <strong>The Employees</strong> by Olga Ravn<br/>
-        My rating: ★★★☆☆<br/>
-        <span class="shelf-tag">dystopia</span><span class="shelf-tag">fiction</span><span class="shelf-tag">lit-fic</span><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span><span class="shelf-tag">science-fiction</span>
-    </summary>
-    <div class="review">
-        This is another one from my new source of book recs, the Waterstones manager, as a suggestion for the next book club book. It’s undeniably a transgressive novel as the narrative structure is unlike other books I’ve read. Unfortunately this structure, a collection of employee statements to the ship HR, doesn’t lend itself to an easy to follow plot. What also didn’t help is that there’s basically no character names, or even really characters, in the statements so it can’t really be a character driven novel either. What really drives it then is the textural descriptions and analysis of the human condition as we hear how the employees react to the mysterious objects they have found. Where she excelled was the subtle way we could distinguish between the humans and humanoids (lab grown humans) by how they respond to the sensory experiences imparted upon them by the objects; The humans were forced into nostalgia for earth where they think they remember having the same smells and textures, but the humanoids, who have no experiences of earth, instead look forwards to the future and dream about what this will mean for them in the future. Her style of writing was done so well that even on inconsequential statements given (which I will reiterate are never labelled with who said them) you can tell by tone of voice if the speaker was human… or perhaps you can’t and I’m just assuming. This is because another key theme was of course that given the humanoids are materially identical to humans can it really be said that just because they were grown and programmed they are innately different after they have had so much time to grow and adapt beyond their programming. <br/><br/>Probably the most important theme given the title was of course on the nature of employment, it is made clear through the statements that life aboard the ship is solely about productivity, everyone being just part of the production line and the humanoids initially having no concept of what life could be possibly like if you weren’t working. I think that’s a theme I will leave to you to glean from the text yourself though because I can’t give you all the answers
-    </div>
-</details>
+        <details class="bookbox" data-shelves="fiction lgbtq low-fantasy owned read-in-2026">
+          <summary>
+            <strong>A Magical Girl Retires</strong> by Park Seolyeon<br />
+            My rating: ★★★★☆<br />
+            <span class="shelf-tag">fiction</span><span class="shelf-tag">lgbtq</span
+            ><span class="shelf-tag">low-fantasy</span><span class="shelf-tag">owned</span
+            ><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            I was first introduced to this book by my new friend the manager at Waterstones and I
+            was intrigued to say the least. Embarrassingly the thing that drew me in most was just
+            how small it was, both height and width. Of course I did then read the blurb and decided
+            I liked the sound of it. Never one to make rash decisions I didn’t buy it that day,
+            surely disappointing the person whose job it was to get me to buy the book. Luckily for
+            them I finished a couple more books so had newfound space on my shelves so I went back
+            and bought it! When I went to put it into my Goodreads I was then heartbroken to
+            discover my friend Sof had already read it
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="owned discworld fiction high-fantasy read-in-2026">
-    <summary>
-        <strong>Sourcery (Discworld, #5)</strong> by Terry Pratchett<br/>
-        My rating: ★★★☆☆<br/>
-        <span class="shelf-tag">owned</span><span class="shelf-tag">discworld</span><span class="shelf-tag">fiction</span><span class="shelf-tag">high-fantasy</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        Coming off the back of equal rites and mort I had higher hopes for this. While it’s impressive that Pratchett is able to change tones between different subseries within discworld so cleanly, I think the rincewinds just don’t work for me as they prioritise being vessels to connect together jokes rather than character/plot driven narratives. Perhaps you could say I’m too old to be reading discworld which makes me take them more seriously than I ought to but the death and witches series didn’t have these problems so I’m not sure it’s as simple as that.
-    </div>
-</details>
+        <details class="bookbox" data-shelves="low-fantasy owned fiction read-in-2026">
+          <summary>
+            <strong>Good Omens</strong> by Terry Pratchett<br />
+            My rating: ★★★★☆<br />
+            <span class="shelf-tag">low-fantasy</span><span class="shelf-tag">owned</span
+            ><span class="shelf-tag">fiction</span><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            I don’t think there’s much I can say about this, if you enjoy Pratchett or Gaiman’s
+            other works you’ll undoubtably enjoy this. Perhaps a little unfortunately the tv show is
+            very close to the book so it was sort of spoilt for me and I knew all the upcoming
+            points. Still a very fun read though so give it a go!
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="fiction lgbtq low-fantasy owned read-in-2026">
-    <summary>
-        <strong>A Magical Girl Retires</strong> by Park Seolyeon<br/>
-        My rating: ★★★★☆<br/>
-        <span class="shelf-tag">fiction</span><span class="shelf-tag">lgbtq</span><span class="shelf-tag">low-fantasy</span><span class="shelf-tag">owned</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        I was first introduced to this book by my new friend the manager at Waterstones and I was intrigued to say the least. Embarrassingly the thing that drew me in most was just how small it was, both height and width. Of course I did then read the blurb and decided I liked the sound of it. Never one to make rash decisions I didn’t buy it that day, surely disappointing the person whose job it was to get me to buy the book. Luckily for them I finished a couple more books so had newfound space on my shelves so I went back and bought it! When I went to put it into my Goodreads I was then heartbroken to discover my friend Sof had already read it
-    </div>
-</details>
+        <details class="bookbox" data-shelves="science-fiction owned fiction read-in-2026">
+          <summary>
+            <strong>Redemption Ark (Revelation Space, #2)</strong> by Alastair Reynolds<br />
+            My rating: ★★★★★<br />
+            <span class="shelf-tag">science-fiction</span><span class="shelf-tag">owned</span
+            ><span class="shelf-tag">fiction</span><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            I’ll have to more carefully avoid spoilers in this review as I am aware my friend Sof is
+            actively reading this, and I seem to have read it too fast. <br /><br />So to be vague I
+            found this to have taken the steps I wanted to see in my favourite space opera seas. I
+            see this as more than just a sequel to one of the most ambitious hard sci-fi books
+            (revelation space), it’s a distillation of what makes Reynolds’ writing so good: vast
+            world building, realistic character work and a strong understanding of physics.
+            <br /><br />After the confusing first person of Chasm City, I’m glad to say he’s gone
+            back to a third person perspective, and similarly we follow roughly three different
+            streams as they slowly come together to form a thrilling conclusion. I know it’s not a
+            fair comparison but when I look back to The Strength of The Few, which I read recently
+            and was also the second book in a larger series, the difference in execution could not
+            be clearer; both followed on from a dramatic conclusion offering new revelations and had
+            three plot lines to follow that don’t directly interact with each other for most of the
+            novel, and yet in contrast to TSOTF we are given plots for each of them that pay off by
+            the end of the novel. If I wanted to never read the sequel I could still walk away
+            feeling satisfied that the character arcs had reached a satisfying conclusion, something
+            I cannot say for the other. Someone commented today in my book club that classic fantasy
+            novels were written as if every single book could be its own story and Reynolds has
+            shown me that can definitely still be done without compromising on the greater
+            universe’s throughlines. <br /><br />Anyway, the characters were another strong point,
+            we were already introduced to a couple in revelation space but the new additions fit in
+            very well too and offered perspectives into the conjoiners that we had not seem before.
+            The interactions were a strong point, each being unique and realistic to how such
+            calculating species would naturally have to be to survive in the kind of world we are
+            shown. The world or perhaps I should say worlds in this novel continue to gain great
+            depth, showing the differences that necessarily come about from space faring species.
+            Resurgam offers such a unique perspective on what it would be like to live on a planet
+            that had all this futuristic technology and then lost it all, forced to try to salvage
+            what you still have while at the whim of far more powerful factions. <br /><br />I can’t
+            really recommend you read this unless you’ve already read revelation space so my advice
+            is read that first and then you’ll have no choice but to carry on
+          </div>
+        </details>
 
-<details class="bookbox" data-shelves="low-fantasy owned fiction read-in-2026">
-    <summary>
-        <strong>Good Omens</strong> by Terry Pratchett<br/>
-        My rating: ★★★★☆<br/>
-        <span class="shelf-tag">low-fantasy</span><span class="shelf-tag">owned</span><span class="shelf-tag">fiction</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        I don’t think there’s much I can say about this, if you enjoy Pratchett or Gaiman’s other works you’ll undoubtably enjoy this. Perhaps a little unfortunately the tv show is very close to the book so it was sort of spoilt for me and I knew all the upcoming points. Still a very fun read though so give it a go!
-    </div>
-</details>
-
-<details class="bookbox" data-shelves="science-fiction owned fiction read-in-2026">
-    <summary>
-        <strong>Redemption Ark (Revelation Space, #2)</strong> by Alastair Reynolds<br/>
-        My rating: ★★★★★<br/>
-        <span class="shelf-tag">science-fiction</span><span class="shelf-tag">owned</span><span class="shelf-tag">fiction</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        I’ll have to more carefully avoid spoilers in this review as I am aware my friend Sof is actively reading this, and I seem to have read it too fast. <br/><br/>So to be vague I found this to have taken the steps I wanted to see in my favourite space opera seas. I see this as more than just a sequel to one of the most ambitious hard sci-fi books (revelation space), it’s a distillation of what makes Reynolds’ writing so good: vast world building, realistic character work and a strong understanding of physics. <br/><br/>After the confusing first person of Chasm City, I’m glad to say he’s gone back to a third person perspective, and similarly we follow roughly three different streams as they slowly come together to form a thrilling conclusion. I know it’s not a fair comparison but when I look back to The Strength of The Few, which I read recently and was also the second book in a larger series, the difference in execution could not be clearer; both followed on from a dramatic conclusion offering new revelations and had three plot lines to follow that don’t directly interact with each other for most of the novel, and yet in contrast to TSOTF we are given plots for each of them that pay off by the end of the novel. If I wanted to never read the sequel I could still walk away feeling satisfied that the character arcs had reached a satisfying conclusion, something I cannot say for the other. Someone commented today in my book club that classic fantasy novels were written as if every single book could be its own story and Reynolds has shown me that can definitely still be done without compromising on the greater universe’s throughlines. <br/><br/>Anyway, the characters were another strong point, we were already introduced to a couple in revelation space but the new additions fit in very well too and offered perspectives into the conjoiners that we had not seem before. The interactions were a strong point, each being unique and realistic to how such calculating species would naturally have to be to survive in the kind of world we are shown. The world or perhaps I should say worlds in this novel continue to gain great depth, showing the differences that necessarily come about from space faring species. Resurgam offers such a unique perspective on what it would be like to live on a planet that had all this futuristic technology and then lost it all, forced to try to salvage what you still have while at the whim of far more powerful factions. <br/><br/>I can’t really recommend you read this unless you’ve already read revelation space so my advice is read that first and then you’ll have no choice but to carry on
-    </div>
-</details>
-
-<details class="bookbox" data-shelves="classics fiction read-in-2026">
-    <summary>
-        <strong>Good Wives</strong> by Louisa May Alcott<br/>
-        My rating: ★★☆☆☆<br/>
-        <span class="shelf-tag">classics</span><span class="shelf-tag">fiction</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        I found this book to be ruinous to little women and it makes me question how it can be so popular. <br/><br/>When I read my copy of little women (the originally published version only including the first part) I loved it and particularly enjoyed that a book written in 1868 could have such a modern narrative of women’s independence. Each of the women had their own passions and plans for the future (almost all not including getting married). Of course at the end of the book Meg does decide to get married which could have been handled a little better but all in all I felt it left off with the women making their own choices to pursue their dreams rather than give it all up for love. <br/><br/>I had hoped then that as the women got older the same level of autonomy would be afforded to them. This was clearly a naive assumption looking back as the name of the book is literally good wives, a very apt description of what they become. Apart from poor Beth, who unfortunately dies, all of the little women end up married and somewhat subservient. This was made most egregiously clear quite early on when we get to visit Meg’s marital home and see her suffering and struggling with certain aspects of the housework when John comes up with a surprise guest that she is ill prepared for. Some would say the logical course of action is to turn the guest away and work together as a couple to resolve things but no the book does not endorse such an empathetic approach; Instead it demonstrates the right course of action to be the husband reprimanding her and going away with the friend, forcing her to later apologise for her failures to be a good wife and promising to be better! How can I even compare the morals of the first part to this and it breaks my heart as I have hence read about Louisa May Alcott’s beliefs and this certainly doesn’t align with that either so it betrays her too. <br/><br/>Ok so maybe we can understand the feminist messaging is gone due to publisher meddling forcing her to make all the sisters get married, I guess that’s believable. Even though I definitely felt that Jo should have remained single, if I was forced to pair her up I would undoubtedly pick Laurie, her best friend and clearly hinted romantic interest. In fact even Laurie would pick that, good for him he can see the romantic tension too!! But wait Jo doesn’t want to get married and turns him down throughout the book, if I hadn’t already told you they all get married you’d think this was great I got what I want, she declares she doesn’t love him and don’t marry him so what could go wrong. Well of course Laurie makes the logical choice and decides if he can’t have Jo he’ll just marry Amy and shockingly enough she’s conveniently already in love with him (which I don’t recall being established before) so now that’s another pairing all nearly sorted for the publishers but wholeheartedly against what the Laurie from little women would have done before, they’ve made him a sleazebag which is unforgivable. Passing over Beth, who’d death was appreciatively tasteful, we are back to Jo who still needs to get married and luckily for her she’s met a nice older teacher (though not her teacher) who is a good kind soul and they fall in love right at the end, just in time to hit the trifecta. Whilst I do like him as a character I don’t think they were good together, primarily because it is said that he essentially stops her writing her trashy stories by criticising the genre while knowing she writes them and then of course when we hear of their future together they speak only of her supporting his teaching and nothing of her writing career, another dream crushed. <br/><br/>Anyway I can ramble on for days about how this book has done a disservice to the characters we are introduced to in little women but I think I’ve said enough to get the message across about why I didn’t like it and I wish I hadn’t read it so I could have kept the hopes and dreams I had for the women
-    </div>
-</details>
+        <details class="bookbox" data-shelves="classics fiction read-in-2026">
+          <summary>
+            <strong>Good Wives</strong> by Louisa May Alcott<br />
+            My rating: ★★☆☆☆<br />
+            <span class="shelf-tag">classics</span><span class="shelf-tag">fiction</span
+            ><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            I found this book to be ruinous to little women and it makes me question how it can be
+            so popular. <br /><br />When I read my copy of little women (the originally published
+            version only including the first part) I loved it and particularly enjoyed that a book
+            written in 1868 could have such a modern narrative of women’s independence. Each of the
+            women had their own passions and plans for the future (almost all not including getting
+            married). Of course at the end of the book Meg does decide to get married which could
+            have been handled a little better but all in all I felt it left off with the women
+            making their own choices to pursue their dreams rather than give it all up for love.
+            <br /><br />I had hoped then that as the women got older the same level of autonomy
+            would be afforded to them. This was clearly a naive assumption looking back as the name
+            of the book is literally good wives, a very apt description of what they become. Apart
+            from poor Beth, who unfortunately dies, all of the little women end up married and
+            somewhat subservient. This was made most egregiously clear quite early on when we get to
+            visit Meg’s marital home and see her suffering and struggling with certain aspects of
+            the housework when John comes up with a surprise guest that she is ill prepared for.
+            Some would say the logical course of action is to turn the guest away and work together
+            as a couple to resolve things but no the book does not endorse such an empathetic
+            approach; Instead it demonstrates the right course of action to be the husband
+            reprimanding her and going away with the friend, forcing her to later apologise for her
+            failures to be a good wife and promising to be better! How can I even compare the morals
+            of the first part to this and it breaks my heart as I have hence read about Louisa May
+            Alcott’s beliefs and this certainly doesn’t align with that either so it betrays her
+            too. <br /><br />Ok so maybe we can understand the feminist messaging is gone due to
+            publisher meddling forcing her to make all the sisters get married, I guess that’s
+            believable. Even though I definitely felt that Jo should have remained single, if I was
+            forced to pair her up I would undoubtedly pick Laurie, her best friend and clearly
+            hinted romantic interest. In fact even Laurie would pick that, good for him he can see
+            the romantic tension too!! But wait Jo doesn’t want to get married and turns him down
+            throughout the book, if I hadn’t already told you they all get married you’d think this
+            was great I got what I want, she declares she doesn’t love him and don’t marry him so
+            what could go wrong. Well of course Laurie makes the logical choice and decides if he
+            can’t have Jo he’ll just marry Amy and shockingly enough she’s conveniently already in
+            love with him (which I don’t recall being established before) so now that’s another
+            pairing all nearly sorted for the publishers but wholeheartedly against what the Laurie
+            from little women would have done before, they’ve made him a sleazebag which is
+            unforgivable. Passing over Beth, who’d death was appreciatively tasteful, we are back to
+            Jo who still needs to get married and luckily for her she’s met a nice older teacher
+            (though not her teacher) who is a good kind soul and they fall in love right at the end,
+            just in time to hit the trifecta. Whilst I do like him as a character I don’t think they
+            were good together, primarily because it is said that he essentially stops her writing
+            her trashy stories by criticising the genre while knowing she writes them and then of
+            course when we hear of their future together they speak only of her supporting his
+            teaching and nothing of her writing career, another dream crushed. <br /><br />Anyway I
+            can ramble on for days about how this book has done a disservice to the characters we
+            are introduced to in little women but I think I’ve said enough to get the message across
+            about why I didn’t like it and I wish I hadn’t read it so I could have kept the hopes
+            and dreams I had for the women
+          </div>
+        </details>
 
         <details class="bookbox" data-shelves="classics fiction read-in-2026">
           <summary>
@@ -397,16 +712,40 @@
           </div>
         </details>
 
-<details class="bookbox" data-shelves="high-fantasy fiction read-in-2026">
-    <summary>
-        <strong>The Strength of the Few (Hierarchy, #2)</strong> by James Islington<br/>
-        My rating: ★★★☆☆<br/>
-        <span class="shelf-tag">high-fantasy</span><span class="shelf-tag">fiction</span><span class="shelf-tag">read-in-2026</span>
-    </summary>
-    <div class="review">
-        Before reading this I’d been given two drastically different reviews, first I was told it was mid and then the next person told me it was great so I was a little confused going into it and now at the end I’d have to say it was a bit of both. I think it suffers greatly from being a middle book which needs to develop everything but isn’t really allowed to pay it off fully. The greatest weakness though is that’s it’s three parallel stories following the same person that don’t ever cross over. While yes they are literally worlds apart it was just a strange experience knowing the happenings for whatever section I was reading would have no impact on the other two. Yes they will certainly come together in the next book, but that could be years away so what I’m left with now felt disconnected. <br/><br/>However as much as I say that it was also three incredible stories that each kept me very engaged and differed enough from each other that I was able to enjoy them all for different reasons as they pitted Vis against distinct challenges. Perhaps I wish these would have shaped his personality a bit more between them so we can understand what being in these other worlds does to his psyche but people don’t change that quickly so I cant really complain. I think my favourite was the Draoi world as we got to see him develop new connections and other significant personal developments but the other two also held their own. <br/><br/>The ending was very dramatic and definitely left me excited to see where it would go in each of the stories but similar to my initial complaint it did make the whole book feel like run up without any strength on its own. It broke my heart that we have been introduced to a character that can travel between two of the worlds (the two most interesting) and they don’t use that yet, keeping it for the finale and that just doesn’t leave me feeling satisfied with this book. I’m definitely going to read the next one but I just don’t know if I can say I’m fully happy with this one.
-    </div>
-</details>
+        <details class="bookbox" data-shelves="high-fantasy fiction read-in-2026">
+          <summary>
+            <strong>The Strength of the Few (Hierarchy, #2)</strong> by James Islington<br />
+            My rating: ★★★☆☆<br />
+            <span class="shelf-tag">high-fantasy</span><span class="shelf-tag">fiction</span
+            ><span class="shelf-tag">read-in-2026</span>
+          </summary>
+          <div class="review">
+            Before reading this I’d been given two drastically different reviews, first I was told
+            it was mid and then the next person told me it was great so I was a little confused
+            going into it and now at the end I’d have to say it was a bit of both. I think it
+            suffers greatly from being a middle book which needs to develop everything but isn’t
+            really allowed to pay it off fully. The greatest weakness though is that’s it’s three
+            parallel stories following the same person that don’t ever cross over. While yes they
+            are literally worlds apart it was just a strange experience knowing the happenings for
+            whatever section I was reading would have no impact on the other two. Yes they will
+            certainly come together in the next book, but that could be years away so what I’m left
+            with now felt disconnected. <br /><br />However as much as I say that it was also three
+            incredible stories that each kept me very engaged and differed enough from each other
+            that I was able to enjoy them all for different reasons as they pitted Vis against
+            distinct challenges. Perhaps I wish these would have shaped his personality a bit more
+            between them so we can understand what being in these other worlds does to his psyche
+            but people don’t change that quickly so I cant really complain. I think my favourite was
+            the Draoi world as we got to see him develop new connections and other significant
+            personal developments but the other two also held their own. <br /><br />The ending was
+            very dramatic and definitely left me excited to see where it would go in each of the
+            stories but similar to my initial complaint it did make the whole book feel like run up
+            without any strength on its own. It broke my heart that we have been introduced to a
+            character that can travel between two of the worlds (the two most interesting) and they
+            don’t use that yet, keeping it for the finale and that just doesn’t leave me feeling
+            satisfied with this book. I’m definitely going to read the next one but I just don’t
+            know if I can say I’m fully happy with this one.
+          </div>
+        </details>
 
         <details class="bookbox" data-shelves="arc comics non-fiction read-in-2026">
           <summary>
@@ -1042,16 +1381,34 @@
           </div>
         </details>
 
-<details class="bookbox" data-shelves="arc dystopia fiction read-in-2025">
-    <summary>
-        <strong>Kill Billionaire: The riotous revenge caper you've been waiting for</strong> by Anders Lustgarten<br/>
-        My rating: ★★★★★<br/>
-        <span class="shelf-tag">arc</span><span class="shelf-tag">dystopia</span><span class="shelf-tag">fiction</span><span class="shelf-tag">read-in-2025</span>
-    </summary>
-    <div class="review">
-        With a name like that it’s easy to know what the book will be about. Set in a slightly more dystopian version of our world we follow a teenage Australian girl as she has to find the solution to climate change; you can probably guess what she decides upon. Whilst this was technically a multi POV story, Kayla dominates the narrative with her witty humour and intelligent solutions to any problem that comes her way. We also get some chapters with our ‘antagonist’, Kate, a headstrong policewoman who is destined for success with her ability to actually think like Kayla and somewhat predict the next moves. These are supplemented by an excellent secondary cast of Mr P, Nancy and Brian each with their own unique and slightly outlandish character traits. I wish we had gotten more from Dmitri the hacker friend whose presence was limited to when they needed something from him and then discarded. All together I’d say this is definitely a book that doesn’t tie itself to realism and flanderises current affairs to provide a stronger message about what needs to be done, although I fear it might come to fruition in the not so far future. If I had one minor gripe it’s that the phrase ‘kill billionaire’, which is used throughout the novel and is of course the title, doesn’t feel grammatically correct; I did check and turns out its allowed but ‘kill billionaires’ sounds much better and is also more accurate.
-    </div>
-</details>
+        <details class="bookbox" data-shelves="arc dystopia fiction read-in-2025">
+          <summary>
+            <strong>Kill Billionaire: The riotous revenge caper you've been waiting for</strong> by
+            Anders Lustgarten<br />
+            My rating: ★★★★★<br />
+            <span class="shelf-tag">arc</span><span class="shelf-tag">dystopia</span
+            ><span class="shelf-tag">fiction</span><span class="shelf-tag">read-in-2025</span>
+          </summary>
+          <div class="review">
+            With a name like that it’s easy to know what the book will be about. Set in a slightly
+            more dystopian version of our world we follow a teenage Australian girl as she has to
+            find the solution to climate change; you can probably guess what she decides upon.
+            Whilst this was technically a multi POV story, Kayla dominates the narrative with her
+            witty humour and intelligent solutions to any problem that comes her way. We also get
+            some chapters with our ‘antagonist’, Kate, a headstrong policewoman who is destined for
+            success with her ability to actually think like Kayla and somewhat predict the next
+            moves. These are supplemented by an excellent secondary cast of Mr P, Nancy and Brian
+            each with their own unique and slightly outlandish character traits. I wish we had
+            gotten more from Dmitri the hacker friend whose presence was limited to when they needed
+            something from him and then discarded. All together I’d say this is definitely a book
+            that doesn’t tie itself to realism and flanderises current affairs to provide a stronger
+            message about what needs to be done, although I fear it might come to fruition in the
+            not so far future. If I had one minor gripe it’s that the phrase ‘kill billionaire’,
+            which is used throughout the novel and is of course the title, doesn’t feel
+            grammatically correct; I did check and turns out its allowed but ‘kill billionaires’
+            sounds much better and is also more accurate.
+          </div>
+        </details>
 
         <details
           class="bookbox"
@@ -2788,16 +3145,62 @@
           </div>
         </details>
 
-<details class="bookbox" data-shelves="owned science-fiction fiction">
-    <summary>
-        <strong>Chapterhouse Dune (Dune Chronicles, #6)</strong> by Frank Patrick Herbert<br/>
-        My rating: ★★★☆☆<br/>
-        <span class="shelf-tag">owned</span><span class="shelf-tag">science-fiction</span><span class="shelf-tag">fiction</span>
-    </summary>
-    <div class="review">
-        This book haunted me for a long time, I started it 7 long months ago and it was a struggle getting through it, I don't really know what made this one so much harder than previous ones, although I do think the previous (5th) was also slower. The two share a lot in common, that being a slower more political approach to the world, spending pages poring over why people made the choices they made and what they are scared will happen, and what they think good will happen if they do it, and what they think their coworkers will think, and the reasons the coworkers won't like it, you get my point, it dragged on for every decision. This on its own isn't a bad thing at all, its a part of what i loved about the first 4 books, but it felt different this time, to me the stakes had shifted poorly. When before you got to see how small decisions could change everything in the future due to huge knock on effects (due to the characters prescience), now the small decisions did genuinely feel small, and often times by the time the character had stopped thinking, I forgot what they were even going to be doing that was so important.<br/><br/>This did not deter me from pushing through however, I was determined to finish the book no matter what. What did stop me however was the introduction of a secret society of Jewish rabbis a couple of hundred pages in. This might seem like an odd thing to stop reading a book over but it really took me out of the story, not because I don't believe that Judaism can exist in sci-fi, but simply because it felt like such a strange decision to make in a narrative deeply critical of religion. It not only seemed to play into antisemitic stereotypes about Jewish cabals, but just felt unnecessary, they only appeared for a few pages and their Jewishness added nothing to the narrative that could not have been filled by a fictitious religion, as has been done many times in the previous 5 books. My best guess is that they would have had a bigger role in the 7th dune book, where the relevancy becomes more clear. Unfortunately Frank Herbert died before writing the 7th (and final) dune book so this is not something that will ever be resolved.<br/><br/>After watching Dune part 2 in the cinema I was reinvigorated to finish the series so we can now go back onto the plot. Despite the regular breaks I do genuinely think the plot was pretty good (even if I did have to look up a summary before writing this review to make sure I remembered it correctly). It started out predictable but good, keeping tensions high while having solid character development. In the middle it did start to get repetitive with very little of the main plot developing, leaving me waiting for the side stories where the real development was happening. The ending however took me by surprise, cleaning up the main story nicely while adding strange new elements that left me wanting to know more. Sadly as I mentioned earlier we will never get to know how Frank planned to wrap it up, and from general consensus his son's attempts to continue the story fall short, so I likely never will find out. Even with a slightly open ended conclusion to the series I did feel satisfied. <br/><br/>Dune as a series never felt like it needed to have everything explained because it often valued the themes over the characters or plot and this book continued that trend. As an ending to the series it provided finality to elements that had continued since the beginning while also opening up whole new avenues for thought, which is exactly how I would have wanted it to be. It is a shame that it felt so much harder to read but I still managed it and feel satisfied knowing I got to see it to the end. <br/><br/>I probably wouldn't recommend it normally but to be honest if you have read the first 5 you have nothing left to lose and might as well see it to a close so I guess I would recommend it since you'd only listen if you had.
-    </div>
-</details>
+        <details class="bookbox" data-shelves="owned science-fiction fiction">
+          <summary>
+            <strong>Chapterhouse Dune (Dune Chronicles, #6)</strong> by Frank Patrick Herbert<br />
+            My rating: ★★★☆☆<br />
+            <span class="shelf-tag">owned</span><span class="shelf-tag">science-fiction</span
+            ><span class="shelf-tag">fiction</span>
+          </summary>
+          <div class="review">
+            This book haunted me for a long time, I started it 7 long months ago and it was a
+            struggle getting through it, I don't really know what made this one so much harder than
+            previous ones, although I do think the previous (5th) was also slower. The two share a
+            lot in common, that being a slower more political approach to the world, spending pages
+            poring over why people made the choices they made and what they are scared will happen,
+            and what they think good will happen if they do it, and what they think their coworkers
+            will think, and the reasons the coworkers won't like it, you get my point, it dragged on
+            for every decision. This on its own isn't a bad thing at all, its a part of what i loved
+            about the first 4 books, but it felt different this time, to me the stakes had shifted
+            poorly. When before you got to see how small decisions could change everything in the
+            future due to huge knock on effects (due to the characters prescience), now the small
+            decisions did genuinely feel small, and often times by the time the character had
+            stopped thinking, I forgot what they were even going to be doing that was so
+            important.<br /><br />This did not deter me from pushing through however, I was
+            determined to finish the book no matter what. What did stop me however was the
+            introduction of a secret society of Jewish rabbis a couple of hundred pages in. This
+            might seem like an odd thing to stop reading a book over but it really took me out of
+            the story, not because I don't believe that Judaism can exist in sci-fi, but simply
+            because it felt like such a strange decision to make in a narrative deeply critical of
+            religion. It not only seemed to play into antisemitic stereotypes about Jewish cabals,
+            but just felt unnecessary, they only appeared for a few pages and their Jewishness added
+            nothing to the narrative that could not have been filled by a fictitious religion, as
+            has been done many times in the previous 5 books. My best guess is that they would have
+            had a bigger role in the 7th dune book, where the relevancy becomes more clear.
+            Unfortunately Frank Herbert died before writing the 7th (and final) dune book so this is
+            not something that will ever be resolved.<br /><br />After watching Dune part 2 in the
+            cinema I was reinvigorated to finish the series so we can now go back onto the plot.
+            Despite the regular breaks I do genuinely think the plot was pretty good (even if I did
+            have to look up a summary before writing this review to make sure I remembered it
+            correctly). It started out predictable but good, keeping tensions high while having
+            solid character development. In the middle it did start to get repetitive with very
+            little of the main plot developing, leaving me waiting for the side stories where the
+            real development was happening. The ending however took me by surprise, cleaning up the
+            main story nicely while adding strange new elements that left me wanting to know more.
+            Sadly as I mentioned earlier we will never get to know how Frank planned to wrap it up,
+            and from general consensus his son's attempts to continue the story fall short, so I
+            likely never will find out. Even with a slightly open ended conclusion to the series I
+            did feel satisfied. <br /><br />Dune as a series never felt like it needed to have
+            everything explained because it often valued the themes over the characters or plot and
+            this book continued that trend. As an ending to the series it provided finality to
+            elements that had continued since the beginning while also opening up whole new avenues
+            for thought, which is exactly how I would have wanted it to be. It is a shame that it
+            felt so much harder to read but I still managed it and feel satisfied knowing I got to
+            see it to the end. <br /><br />I probably wouldn't recommend it normally but to be
+            honest if you have read the first 5 you have nothing left to lose and might as well see
+            it to a close so I guess I would recommend it since you'd only listen if you had.
+          </div>
+        </details>
 
         <details class="bookbox" data-shelves="owned non-fiction">
           <summary>
@@ -3016,16 +3419,40 @@
           </div>
         </details>
 
-<details class="bookbox" data-shelves="owned science-fiction fiction">
-    <summary>
-        <strong>Heretics of Dune (Dune #5)</strong> by Frank Patrick Herbert<br/>
-        My rating: ★★★☆☆<br/>
-        <span class="shelf-tag">owned</span><span class="shelf-tag">science-fiction</span><span class="shelf-tag">fiction</span>
-    </summary>
-    <div class="review">
-        I will start this review with a spoiler warning, not that I need one cos the only person who reads my reviews is Sofia (pls read this Sofia) but in case a random person does read it there are spoilers, could I use the spoiler button? Yes, but I find these long and unnecessary rambles more fun. Now onto the actual review.<br/><br/>This is a difficult review to write because I wanted to like the book, and maybe I did like the book, I’m undecided, but it felt stale. It’s an interesting story, but it’s not a new story and that’s what’s holding it back for me. We are now at the 5th book in the series and it feels it’s afraid to try anything truly new. They still got Duncan Idaho back again, despite him dying in the first book, I could understand Leto II wanting him around for whatever weird plan he had, cos at least he knew the guy and was like a family friend and whatever, but at this point it’s legitimately been 5000 years since he died and now the religious order is cloning him for their plans. Like he’s cool sure but he’s not actually that special within the universe, why not clone the dude who turned into an immortal worm or the person who could see the entire future, why do they keep reviving the a pretty generic soldier, idk it bothered me, as you might tell from this long rant. The problem isn’t just with Duncan though, everything just felt the same, sure they changed the names of places but that doesn’t make it different, its just another appearance of someone with incredible powers and all the other manipulative factions plotting some convoluted plan to use them while also plotting against each other. That’s a perfectly good story structure and I liked it the first four times, because each one added a different twist or a new faction, but this one just felt like the same thing with nothing to make it stand out. It wasn’t all bad tho concept still great and still excited to see how the story ends in the next one, just hope something big mixes it up again.
-    </div>
-</details>
+        <details class="bookbox" data-shelves="owned science-fiction fiction">
+          <summary>
+            <strong>Heretics of Dune (Dune #5)</strong> by Frank Patrick Herbert<br />
+            My rating: ★★★☆☆<br />
+            <span class="shelf-tag">owned</span><span class="shelf-tag">science-fiction</span
+            ><span class="shelf-tag">fiction</span>
+          </summary>
+          <div class="review">
+            I will start this review with a spoiler warning, not that I need one cos the only person
+            who reads my reviews is Sofia (pls read this Sofia) but in case a random person does
+            read it there are spoilers, could I use the spoiler button? Yes, but I find these long
+            and unnecessary rambles more fun. Now onto the actual review.<br /><br />This is a
+            difficult review to write because I wanted to like the book, and maybe I did like the
+            book, I’m undecided, but it felt stale. It’s an interesting story, but it’s not a new
+            story and that’s what’s holding it back for me. We are now at the 5th book in the series
+            and it feels it’s afraid to try anything truly new. They still got Duncan Idaho back
+            again, despite him dying in the first book, I could understand Leto II wanting him
+            around for whatever weird plan he had, cos at least he knew the guy and was like a
+            family friend and whatever, but at this point it’s legitimately been 5000 years since he
+            died and now the religious order is cloning him for their plans. Like he’s cool sure but
+            he’s not actually that special within the universe, why not clone the dude who turned
+            into an immortal worm or the person who could see the entire future, why do they keep
+            reviving the a pretty generic soldier, idk it bothered me, as you might tell from this
+            long rant. The problem isn’t just with Duncan though, everything just felt the same,
+            sure they changed the names of places but that doesn’t make it different, its just
+            another appearance of someone with incredible powers and all the other manipulative
+            factions plotting some convoluted plan to use them while also plotting against each
+            other. That’s a perfectly good story structure and I liked it the first four times,
+            because each one added a different twist or a new faction, but this one just felt like
+            the same thing with nothing to make it stand out. It wasn’t all bad tho concept still
+            great and still excited to see how the story ends in the next one, just hope something
+            big mixes it up again.
+          </div>
+        </details>
 
         <details class="bookbox" data-shelves="owned science-fiction fiction anthology-collection">
           <summary>
@@ -3359,16 +3786,31 @@
           </div>
         </details>
 
-<details class="bookbox" data-shelves="owned science-fiction fiction">
-    <summary>
-        <strong>God Emperor of Dune (Dune, #4)</strong> by Frank Patrick Herbert<br/>
-        My rating: ★★★☆☆<br/>
-        <span class="shelf-tag">owned</span><span class="shelf-tag">science-fiction</span><span class="shelf-tag">fiction</span>
-    </summary>
-    <div class="review">
-        [lots of spoilers, this is a rant not a review] <br/>This book was tricky, it has been a while since I finished children of dune so that might have effected my ability to enjoy it slightly but given the 3000 year time skip I can’t imagine the details were essential. Leto II was an annoying character and although I’m sure it was intentional, for a supposed genius who can see the future he was really stupid. While I can understand that he knew he could not avoid loving Hwi did he really have to give up on everything he had built just to clap some cheeks (which he can’t even do cos he’s a worm). The book was an enjoyable read and the story progressed nicely, it was just really frustrating to see every character make the least logical choices possible, why is this family of prophets who have been bred to be great at everything so stupid, I know that’s somewhat the point of the series, and is present in the first few books but at least things worked out like Paul Muad-Dib had planned, Leto just died because he wanted to marry a pretty women his enemies sent to woo him. Anyway fun read very frustrating I wanna know what happens next now that his genius plan has supposedly succeeded even tho he fell of a cliff and died.
-    </div>
-</details>
+        <details class="bookbox" data-shelves="owned science-fiction fiction">
+          <summary>
+            <strong>God Emperor of Dune (Dune, #4)</strong> by Frank Patrick Herbert<br />
+            My rating: ★★★☆☆<br />
+            <span class="shelf-tag">owned</span><span class="shelf-tag">science-fiction</span
+            ><span class="shelf-tag">fiction</span>
+          </summary>
+          <div class="review">
+            [lots of spoilers, this is a rant not a review] <br />This book was tricky, it has been
+            a while since I finished children of dune so that might have effected my ability to
+            enjoy it slightly but given the 3000 year time skip I can’t imagine the details were
+            essential. Leto II was an annoying character and although I’m sure it was intentional,
+            for a supposed genius who can see the future he was really stupid. While I can
+            understand that he knew he could not avoid loving Hwi did he really have to give up on
+            everything he had built just to clap some cheeks (which he can’t even do cos he’s a
+            worm). The book was an enjoyable read and the story progressed nicely, it was just
+            really frustrating to see every character make the least logical choices possible, why
+            is this family of prophets who have been bred to be great at everything so stupid, I
+            know that’s somewhat the point of the series, and is present in the first few books but
+            at least things worked out like Paul Muad-Dib had planned, Leto just died because he
+            wanted to marry a pretty women his enemies sent to woo him. Anyway fun read very
+            frustrating I wanna know what happens next now that his genius plan has supposedly
+            succeeded even tho he fell of a cliff and died.
+          </div>
+        </details>
 
         <details class="bookbox" data-shelves="low-fantasy owned fiction">
           <summary>

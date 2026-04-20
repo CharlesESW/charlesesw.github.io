@@ -1,8 +1,26 @@
-@import url("theme.css");
+:root {
+    color-scheme: light;
+    --page-bg: #aed0f2;
+    --page-surface: rgba(255, 255, 255, 0.45);
+    --page-surface-strong: rgba(255, 255, 255, 0.68);
+    --page-border: rgba(42, 30, 92, 0.18);
+    --page-border-strong: rgba(42, 30, 92, 0.28);
+    --page-text: #2a1e5c;
+    --page-heading: #6c091f;
+    --page-link: #2a1e5c;
+    --page-shadow: 0 10px 28px rgba(41, 53, 94, 0.08);
+    --page-font: Arial, sans-serif;
+}
 
 body {
     background: var(--page-bg);
     color: var(--page-text);
+    font-family: var(--page-font);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.5;
 }
 
 .page-container {
@@ -33,6 +51,7 @@ header {
     flex: 1;
     flex-direction: column;
     padding-bottom: 60px;
+    box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
@@ -61,18 +80,20 @@ header {
 
 @media (min-width: 768px) {
     .sidebar {
-        width: 480px; 
+        width: 480px;
         flex-shrink: 0;
         padding-right: 15px;
     }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin: 10px 0;
     color: var(--page-heading);
 }
 
-h3{
+h3 {
     font-size: 130%;
 }
 
@@ -155,9 +176,4 @@ a:hover {
 .webring-footer a {
     color: var(--page-link);
     white-space: nowrap;
-}
-
-.gr_custom_container_1746365601 {
-    max-width: 100%;
-    margin: 0 auto;
 }

@@ -1,0 +1,206 @@
+@import url("../theme.css");
+
+header {
+    margin: 28px 0 10px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 12px 72px;
+}
+
+.sidebar {
+    display: none;
+}
+
+.main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 16px;
+}
+
+.main > a:last-of-type {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0.75rem;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    background: var(--page-surface);
+}
+
+.main > a:last-of-type:hover {
+    background: var(--page-surface-strong);
+    text-decoration: none;
+}
+
+.bookbox summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.bookbox summary::-webkit-details-marker {
+    display: none;
+}
+
+.bookbox {
+    border: 1px solid var(--page-border);
+    border-radius: 18px;
+    padding: 1rem 1.1rem;
+    margin-bottom: 1rem;
+    background: var(--page-surface);
+}
+
+.bookbox:hover {
+    border-color: var(--page-border-strong);
+}
+
+.bookbox[open] {
+    background: var(--page-surface-strong);
+}
+
+.bookbox strong {
+    font-size: 1.08rem;
+}
+
+.bookbox summary::after {
+    content: "Read review";
+    align-self: flex-start;
+    display: inline-flex;
+    margin-top: 0.1rem;
+    padding: 0.16rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+    font-size: 0.76rem;
+    letter-spacing: 0.02em;
+    opacity: 1;
+}
+
+.bookbox[open] summary::after {
+    content: "Hide review";
+}
+
+.bookbox .review {
+    margin-top: 1rem;
+    max-width: 68ch;
+}
+
+.shelf-filter {
+    margin: 1rem 0 1.35rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+    padding: 0.85rem 0.9rem;
+    border: 1px solid var(--page-border);
+    border-radius: 18px;
+    background: var(--page-surface);
+}
+
+.shelf-filter-label {
+    font-size: 0.8em;
+    opacity: 0.8;
+    margin-right: 0.15rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.shelf-btn {
+    padding: 0.28em 0.68em;
+    font-size: 0.8em;
+    border: 1px solid rgba(42, 30, 92, 0.22);
+    background: rgba(255, 255, 255, 0.42);
+    cursor: pointer;
+    border-radius: 2em;
+    font-family: inherit;
+    color: inherit;
+    transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease,
+        border-color 0.15s ease;
+}
+
+.shelf-btn:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.7);
+    border-color: var(--page-border-strong);
+}
+
+.shelf-btn.active {
+    background: currentColor;
+}
+
+.shelf-btn.active span {
+    color: white;
+}
+
+#clear-filter {
+    padding: 0.28em 0.2em;
+    font-size: 0.8em;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    text-decoration: underline;
+    display: none;
+}
+
+#clear-filter.visible {
+    display: inline;
+}
+
+.shelf-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.shelf-tag {
+    display: inline-block;
+    font-size: 0.72em;
+    padding: 0.18em 0.6em;
+    border: 1px solid rgba(42, 30, 92, 0.24);
+    border-radius: 2em;
+    margin: 0.25em 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.bookbox.hidden {
+    display: none;
+}
+
+#no-results {
+    display: none;
+    opacity: 0.75;
+    font-style: italic;
+    margin: 1em 0 1.25em;
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 0 14px;
+    }
+
+    .content {
+        padding: 0 10px 64px;
+    }
+
+    .main {
+        padding: 0;
+    }
+
+    .shelf-filter {
+        padding: 0.75rem;
+    }
+}

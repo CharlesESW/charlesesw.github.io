@@ -1,5 +1,9 @@
 import csv
+import html
+import shutil
+import subprocess
 from datetime import datetime
+from pathlib import Path
 
 # ===== CONFIG =====
 INPUT_CSV = "goodreads_library_export.csv"  # your exported CSV
@@ -79,17 +83,23 @@ for shelf in sorted_shelves:
 # ===== GENERATE BOOK CARDS =====
 html_books = ""
 for book in books:
-    review_html = book["review_text"].replace('\n', '<br /><br />')
-    shelf_data = " ".join(book["shelves"])
+    review_html = html.escape(book["review_text"])
+    review_html = review_html.replace('&lt;br&gt;', '<br />')
+    review_html = review_html.replace('&lt;br/&gt;', '<br />')
+    review_html = review_html.replace('&lt;br /&gt;', '<br />')
+    review_html = review_html.replace('\n', '<br /><br />')
+    title_html = html.escape(book["title"])
+    author_html = html.escape(book["author"])
+    shelf_data = html.escape(" ".join(book["shelves"]))
     shelf_tags_html = "".join(
-        f'<span class="shelf-tag">{s}</span>' for s in book["shelves"]
+        f'<span class="shelf-tag">{html.escape(s)}</span>' for s in book["shelves"]
     )
     html_books += f'''
 <details class="bookbox" data-shelves="{shelf_data}">
     <summary>
-        <strong>{book["title"]}</strong> by {book["author"]}<br/>
+        <strong>{title_html}</strong> by {author_html}<br/>
         My rating: {book["stars"]}<br/>
-        {shelf_tags_html}
+        <span class="shelf-tags">{shelf_tags_html}</span>
     </summary>
     <div class="review">
         {review_html}
@@ -105,97 +115,7 @@ html = f"""<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{PAGE_TITLE}</title>
     <link rel="icon" type="image/x-icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../blog/blogstyles.css">
-    <style>
-        .bookbox summary {{
-            cursor: pointer;
-            list-style: none;
-        }}
-        .bookbox summary::-webkit-details-marker {{
-            display: none;
-        }}
-        .bookbox summary::after {{
-            content: "▸ read review";
-            display: block;
-            font-size: 1em;
-            opacity: 1;
-        }}
-        .bookbox[open] summary::after {{
-            content: "▾ hide review";
-        }}
-        .bookbox .review {{
-            margin-top: 0.75em;
-        }}
-
-        /* Shelf filter bar */
-        .shelf-filter {{
-            margin-bottom: 1.5em;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4em;
-            align-items: center;
-        }}
-        .shelf-filter-label {{
-            font-size: 0.85em;
-            opacity: 1;
-            margin-right: 0.3em;
-        }}
-        .shelf-btn {{
-            padding: 0.2em 0.7em;
-            font-size: 0.8em;
-            border: 1px solid currentColor;
-            background: transparent;
-            cursor: pointer;
-            border-radius: 2em;
-            font-family: inherit;
-            color: inherit;
-            transition: background 0.15s, color 0.15s;
-        }}
-        .shelf-btn:hover {{
-            background: rgba(0,0,0,0.08);
-        }}
-        .shelf-btn.active {{
-            background: currentColor;
-        }}
-        .shelf-btn.active span {{
-            color: white;
-        }}
-        #clear-filter {{
-            padding: 0.2em 0.7em;
-            font-size: 0.8em;
-            border: none;
-            background: transparent;
-            cursor: pointer;
-            font-family: inherit;
-            text-decoration: underline;
-            display: none;
-        }}
-        #clear-filter.visible {{
-            display: inline;
-        }}
-
-        /* Shelf tags on each book */
-        .shelf-tag {{
-            display: inline-block;
-            font-size: 0.75em;
-            padding: 0.1em 0.55em;
-            border: 1px solid currentColor;
-            border-radius: 2em;
-            margin: 0.2em 0.2em 0 0;
-        }}
-
-        /* Hidden books */
-        .bookbox.hidden {{
-            display: none;
-        }}
-
-        #no-results {{
-            display: none;
-            opacity: 0.6;
-            font-style: italic;
-            margin: 1em 0;
-        }}
-    </style>
+    <link rel="stylesheet" href="books.css">
 </head>
 <body>
     <div class="topnav">
@@ -276,8 +196,45 @@ html = f"""<!DOCTYPE html>
 </html>
 """
 
+project_root = Path(__file__).resolve().parents[1]
+output_path = Path(__file__).resolve().parent / OUTPUT_HTML
+prettier_config = project_root / ".prettierrc"
+
+
+def run_prettier(cmd):
+    subprocess.run(cmd, check=True, cwd=project_root)
+
 # ===== SAVE HTML =====
-with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
+# Write with LF to align with .prettierrc endOfLine setting.
+with open(OUTPUT_HTML, "w", encoding="utf-8", newline="\n") as f:
     f.write(html)
+
+# If prettier is available, format the generated HTML using the repo config.
+try:
+    prettier_exe = shutil.which("prettier")
+    npx_exe = shutil.which("npx")
+
+    if prettier_exe:
+        run_prettier([
+            prettier_exe,
+            "--config",
+            str(prettier_config),
+            "--write",
+            str(output_path),
+        ])
+    elif npx_exe:
+        run_prettier([
+            npx_exe,
+            "--yes",
+            "prettier",
+            "--config",
+            str(prettier_config),
+            "--write",
+            str(output_path),
+        ])
+    else:
+        print("Prettier not found in PATH; skipped formatting step.")
+except (FileNotFoundError, subprocess.CalledProcessError) as exc:
+    print(f"Prettier formatting failed ({exc}); output HTML was still generated.")
 
 print(f"HTML page generated successfully: {OUTPUT_HTML}")

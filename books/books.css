@@ -28,7 +28,7 @@ header h1 {
     padding: 0 0 16px;
 }
 
-.main > a:last-of-type {
+.goodreads-link {
     display: inline-flex;
     align-items: center;
     margin-top: 0.75rem;
@@ -38,7 +38,7 @@ header h1 {
     background: var(--page-surface);
 }
 
-.main > a:last-of-type:hover {
+.goodreads-link:hover {
     background: var(--page-surface-strong);
     text-decoration: none;
 }
@@ -95,10 +95,56 @@ header h1 {
 .bookbox .review {
     margin-top: 1rem;
     max-width: 68ch;
+    white-space: pre-line;
+}
+
+.book-metadata {
+    display: block;
+}
+
+.book-controls {
+    margin: 1rem 0 1.35rem;
+}
+
+.primary-controls {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(150px, 220px);
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.search-control,
+.sort-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.search-control input,
+.sort-control select {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2.6rem;
+    padding: 0.55rem 0.7rem;
+    border: 1px solid var(--page-border);
+    border-radius: 12px;
+    background: var(--page-surface);
+    color: inherit;
+    font: inherit;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.search-control input:focus,
+.sort-control select:focus {
+    outline: 2px solid var(--page-border-strong);
+    outline-offset: 2px;
 }
 
 .shelf-filter {
-    margin: 1rem 0 1.35rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
@@ -107,6 +153,10 @@ header h1 {
     border: 1px solid var(--page-border);
     border-radius: 18px;
     background: var(--page-surface);
+}
+
+.shelf-buttons {
+    display: contents;
 }
 
 .shelf-filter-label {
@@ -176,15 +226,15 @@ header h1 {
     background: rgba(255, 255, 255, 0.5);
 }
 
-.bookbox.hidden {
-    display: none;
-}
-
 #no-results {
-    display: none;
     opacity: 0.75;
     font-style: italic;
     margin: 1em 0 1.25em;
+}
+
+#result-count {
+    margin: 0 0 1rem;
+    opacity: 0.8;
 }
 
 @media (max-width: 767px) {
@@ -202,5 +252,9 @@ header h1 {
 
     .shelf-filter {
         padding: 0.75rem;
+    }
+
+    .primary-controls {
+        grid-template-columns: 1fr;
     }
 }

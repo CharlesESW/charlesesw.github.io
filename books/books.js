@@ -5,6 +5,10 @@ const clearButton = document.querySelector("#clear-filter");
 const resultCount = document.querySelector("#result-count");
 const noResults = document.querySelector("#no-results");
 const bookList = document.querySelector("#book-list");
+const shelfFilter = document.querySelector("#shelf-filter");
+
+const SEARCH_DELAY_MS = 180;
+let searchTimer;
 
 const state = {
   books: [],
@@ -35,6 +39,31 @@ function bookAnchor(book) {
   return book.id ? `book-${book.id}` : "";
 }
 
+function shelfLink(shelf) {
+  const url = new URL(window.location.href);
+  url.search = "";
+  url.hash = "";
+  url.searchParams.set("shelf", shelf);
+  return url.toString();
+}
+
+async function copyReviewLink(book, button) {
+  const url = new URL(window.location.href);
+  url.search = "";
+  url.hash = bookAnchor(book);
+
+  try {
+    await navigator.clipboard.writeText(url.toString());
+    button.textContent = "Copied!";
+  } catch {
+    button.textContent = "Copy failed";
+  }
+
+  window.setTimeout(() => {
+    button.textContent = "Copy link";
+  }, 1800);
+}
+
 function createBookCard(book) {
   const card = document.createElement("details");
   card.className = "bookbox";
@@ -53,9 +82,19 @@ function createBookCard(book) {
   const tags = document.createElement("span");
   tags.className = "shelf-tags";
   for (const shelf of book.shelves) {
-    const tag = document.createElement("span");
+    const tag = document.createElement("a");
     tag.className = "shelf-tag";
     tag.textContent = shelf;
+    tag.href = shelfLink(shelf);
+    tag.title = `Filter by ${shelf}`;
+    tag.addEventListener("click", (event) => {
+      event.stopPropagation();
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      state.shelves.add(shelf);
+      renderBooks();
+      shelfFilter.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
     tags.append(tag);
   }
   summary.append(tags);
@@ -64,7 +103,16 @@ function createBookCard(book) {
   review.className = "review";
   review.textContent = book.review.replace(/<br\s*\/?\s*>/gi, "\n");
 
-  card.append(summary, review);
+  const reviewActions = document.createElement("div");
+  reviewActions.className = "review-actions";
+  const copyLink = document.createElement("button");
+  copyLink.type = "button";
+  copyLink.className = "copy-link";
+  copyLink.textContent = "Copy link";
+  copyLink.addEventListener("click", () => copyReviewLink(book, copyLink));
+  reviewActions.append(copyLink);
+
+  card.append(summary, review, reviewActions);
   return card;
 }
 
@@ -180,8 +228,11 @@ function openLinkedBook() {
 }
 
 searchInput.addEventListener("input", () => {
-  state.search = searchInput.value;
-  renderBooks();
+  window.clearTimeout(searchTimer);
+  searchTimer = window.setTimeout(() => {
+    state.search = searchInput.value;
+    renderBooks();
+  }, SEARCH_DELAY_MS);
 });
 
 sortSelect.addEventListener("change", () => {
@@ -190,6 +241,7 @@ sortSelect.addEventListener("change", () => {
 });
 
 clearButton.addEventListener("click", () => {
+  window.clearTimeout(searchTimer);
   state.search = "";
   state.shelves.clear();
   searchInput.value = "";

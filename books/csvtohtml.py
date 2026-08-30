@@ -64,6 +64,9 @@ def load_books(input_path):
                     "id": row.get("Book Id", "").strip(),
                     "title": row.get("Title", "").strip() or "Unknown Title",
                     "author": row.get("Author", "").strip() or "Unknown Author",
+                    "authorSort": row.get("Author l-f", "").strip()
+                    or row.get("Author", "").strip()
+                    or "Unknown Author",
                     "rating": parse_rating(row.get("My Rating")),
                     "dateRead": date_read.isoformat() if date_read else None,
                     "shelves": parse_shelves(row.get("Bookshelves")),

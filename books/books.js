@@ -84,7 +84,7 @@ function sortedBooks(books) {
     oldest: (first, second) => compareDates(first, second, 1),
     rating: (first, second) => second.rating - first.rating || compareDates(first, second, -1),
     title: textSort("title"),
-    author: textSort("author"),
+    author: textSort("authorSort"),
   };
   return sorted.sort(comparators[state.sort]);
 }

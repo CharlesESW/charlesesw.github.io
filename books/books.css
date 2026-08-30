@@ -237,10 +237,16 @@ header h1 {
 }
 
 .review-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
     margin-top: 0.8rem;
 }
 
+.review-page-link,
 .copy-link {
+    display: inline-flex;
+    align-items: center;
     padding: 0.28em 0.68em;
     border: 1px solid currentColor;
     border-radius: 999px;
@@ -249,11 +255,68 @@ header h1 {
     cursor: pointer;
     font: inherit;
     font-size: 0.76rem;
+    text-decoration: none;
 }
 
+.review-page-link:hover,
+.review-page-link:focus-visible,
 .copy-link:hover,
 .copy-link:focus-visible {
     background: rgba(255, 255, 255, 0.65);
+}
+
+.review-content {
+    padding-top: 1.5rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+}
+
+.review-detail {
+    padding: clamp(1.1rem, 3vw, 2rem);
+    border: 1px solid var(--page-border);
+    border-radius: 18px;
+    background: var(--page-surface);
+}
+
+.review-kicker {
+    margin: 0 0 0.35rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    opacity: 0.72;
+    text-transform: uppercase;
+}
+
+.review-detail h1 {
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1.05;
+}
+
+.review-byline {
+    margin: 0.55rem 0 0;
+    font-size: 1.1rem;
+}
+
+.review-detail-metadata {
+    margin: 0.75rem 0 0;
+}
+
+.review-detail .shelf-tags {
+    margin-top: 0.7rem;
+}
+
+.review-detail-text {
+    max-width: 68ch;
+    margin-top: 1.75rem;
+    line-height: 1.7;
+    white-space: pre-line;
+}
+
+#review-status {
+    opacity: 0.8;
 }
 
 #no-results {

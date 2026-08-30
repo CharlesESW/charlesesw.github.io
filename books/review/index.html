@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A book review by Charlie." />
+    <title>Book review | Charlie's Books</title>
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../books.css" />
+    <script src="review.js" defer></script>
+  </head>
+  <body>
+    <nav class="topnav" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a class="active" href="/books/" aria-current="page">Books</a>
+    </nav>
+
+    <main class="content review-content">
+      <div class="main">
+        <a id="back-link" class="back-link" href="/books/">← All book reviews</a>
+        <p id="review-status" role="status" aria-live="polite">Loading review…</p>
+
+        <article id="review-detail" class="review-detail" hidden>
+          <p class="review-kicker">Book review</p>
+          <h1 id="review-title"></h1>
+          <p id="review-author" class="review-byline"></p>
+          <p id="review-metadata" class="review-detail-metadata"></p>
+          <div id="review-shelves" class="shelf-tags" aria-label="Book shelves"></div>
+          <div id="review-text" class="review-detail-text"></div>
+          <div class="review-actions">
+            <button id="copy-review-link" class="copy-link" type="button">Copy link</button>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

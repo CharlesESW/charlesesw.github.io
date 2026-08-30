@@ -35,10 +35,6 @@ function formatDate(dateRead) {
   }).format(new Date(`${dateRead}T00:00:00Z`))}`;
 }
 
-function bookAnchor(book) {
-  return book.id ? `book-${book.id}` : "";
-}
-
 function shelfLink(shelf) {
   const url = new URL(window.location.href);
   url.search = "";
@@ -47,13 +43,17 @@ function shelfLink(shelf) {
   return url.toString();
 }
 
-async function copyReviewLink(book, button) {
-  const url = new URL(window.location.href);
+function reviewPageLink(book) {
+  const url = new URL("review/", window.location.href);
   url.search = "";
-  url.hash = bookAnchor(book);
+  url.hash = "";
+  url.searchParams.set("id", book.id);
+  return url.toString();
+}
 
+async function copyReviewLink(book, button) {
   try {
-    await navigator.clipboard.writeText(url.toString());
+    await navigator.clipboard.writeText(reviewPageLink(book));
     button.textContent = "Copied!";
   } catch {
     button.textContent = "Copy failed";
@@ -67,7 +67,6 @@ async function copyReviewLink(book, button) {
 function createBookCard(book) {
   const card = document.createElement("details");
   card.className = "bookbox";
-  card.id = bookAnchor(book);
 
   const summary = document.createElement("summary");
   const heading = document.createElement("strong");
@@ -105,12 +104,16 @@ function createBookCard(book) {
 
   const reviewActions = document.createElement("div");
   reviewActions.className = "review-actions";
+  const reviewPage = document.createElement("a");
+  reviewPage.className = "review-page-link";
+  reviewPage.href = reviewPageLink(book);
+  reviewPage.textContent = "Open review page";
   const copyLink = document.createElement("button");
   copyLink.type = "button";
   copyLink.className = "copy-link";
   copyLink.textContent = "Copy link";
   copyLink.addEventListener("click", () => copyReviewLink(book, copyLink));
-  reviewActions.append(copyLink);
+  reviewActions.append(reviewPage, copyLink);
 
   card.append(summary, review, reviewActions);
   return card;
@@ -218,15 +221,6 @@ function loadStateFromUrl() {
   sortSelect.value = state.sort;
 }
 
-function openLinkedBook() {
-  if (!window.location.hash) return;
-  const linkedBook = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
-  if (linkedBook instanceof HTMLDetailsElement) {
-    linkedBook.open = true;
-    linkedBook.scrollIntoView({ block: "start" });
-  }
-}
-
 searchInput.addEventListener("input", () => {
   window.clearTimeout(searchTimer);
   searchTimer = window.setTimeout(() => {
@@ -249,8 +243,6 @@ clearButton.addEventListener("click", () => {
   searchInput.focus();
 });
 
-window.addEventListener("hashchange", openLinkedBook);
-
 fetch("books.json")
   .then((response) => {
     if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
@@ -261,7 +253,6 @@ fetch("books.json")
     loadStateFromUrl();
     createShelfFilters();
     renderBooks({ updateLocation: false });
-    openLinkedBook();
   })
   .catch((error) => {
     console.error("Unable to load book reviews", error);

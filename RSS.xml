@@ -1,30 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
-<channel>
-<title>Charlie's Blog</title>
-<link>https://charliew.net/blog</link>
-<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://charliew.net/RSS.xml" rel="self" type="application/rss+xml" />
-<description>Updates on my Life, Computers and Books</description>
-<item>
-<title>Ten Pointless Facts About Me</title>
-<link>https://charliew.net/blog/ten-pointless-facts/</link>
-<guid>https://charliew.net/blog/ten-pointless-facts/</guid>
-<pubDate>Thu, 8 May 2025 12:30:00</pubDate>
-<description>My answers to the ten pointless question Abi gave me.</description>
-</item>
-<item>
-<title>Cataloging My Home Library</title>
-<link>https://charliew.net/blog/cataloging-my-home-library/</link>
-<guid>https://charliew.net/blog/cataloging-my-home-library/</guid>
-<pubDate>Sun, 16 Feb 2025 12:15:12 GMT</pubDate>
-<description>The story of my methods to catalog my home library in Birmingham.</description>
-</item>
-<item>
-<title>My First Blog Post</title>
-<link>https://charliew.net/blog/first-post/</link>
-<guid>https://charliew.net/blog/first-post/</guid>
-<pubDate>Fri, 14 Feb 2025 15:10:45 GMT</pubDate>
-<description>The first blog post I ever made.</description>
-</item>
-</channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Charlie's Blog</title>
+    <link>https://charliew.net/blog/</link>
+    <atom:link href="https://charliew.net/RSS.xml" rel="self" type="application/rss+xml" />
+    <description>Updates on my life, computers and books.</description>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 31 Aug 2026 20:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Creating My Book Review Page</title>
+      <link>https://charliew.net/blog/creating-my-book-review-page/</link>
+      <guid isPermaLink="true">https://charliew.net/blog/creating-my-book-review-page/</guid>
+      <pubDate>Mon, 31 Aug 2026 20:00:00 GMT</pubDate>
+      <description>A brief description of what I did for my book review page.</description>
+    </item>
+    <item>
+      <title>Ten Pointless Facts About Me</title>
+      <link>https://charliew.net/blog/ten-pointless-facts/</link>
+      <guid isPermaLink="true">https://charliew.net/blog/ten-pointless-facts/</guid>
+      <pubDate>Thu, 08 May 2025 12:30:00 GMT</pubDate>
+      <description>My answers to the ten pointless questions Abi gave me.</description>
+    </item>
+    <item>
+      <title>Cataloging My Home Library</title>
+      <link>https://charliew.net/blog/cataloging-my-home-library/</link>
+      <guid isPermaLink="true">https://charliew.net/blog/cataloging-my-home-library/</guid>
+      <pubDate>Sun, 16 Feb 2025 12:15:12 GMT</pubDate>
+      <description>The story of how I catalogued my home library in Birmingham.</description>
+    </item>
+    <item>
+      <title>My First Blog Post</title>
+      <link>https://charliew.net/blog/first-post/</link>
+      <guid isPermaLink="true">https://charliew.net/blog/first-post/</guid>
+      <pubDate>Fri, 14 Feb 2025 15:10:45 GMT</pubDate>
+      <description>The first blog post I ever made.</description>
+    </item>
+  </channel>
 </rss>

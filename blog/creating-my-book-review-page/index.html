@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Title</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../blogstyles.css" />
+    <link rel="alternate" type="application/rss+xml" title="Charlie's Blog RSS" href="/RSS.xml" />
+  </head>
+  <body>
+    <nav class="topnav" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a class="active" href="/blog/" aria-current="page">Blog</a>
+      <a href="/books/">Books</a>
+    </nav>
+    <header>
+      <h1>Creating My Book Review Page</h1>
+      <h2>31/08/26</h2>
+    </header>
+    <div class="content">
+      <div class="sidebar"></div>
+      <div class="main">
+        <div>
+          <p>
+            If I'm being completely honest I have been neglecting my website for quite a while, in
+            particular my blogs page which I haven't really updated in the last year. However, there
+            is one page that has had my heart and that is the books page, which shows the previous
+            book reviews I have written so in this I will tell you how it works. I think the reason
+            it gets so many more updates is quite simply that I need to interact with it every month
+            when I import the new books, so I am more likely to notice things I want changed.
+            <br />
+            <br />
+            The first version, which I am now somewhat embarrassed by, was created by simply copying
+            the text of the review into the html file every time I wrote one, which I will admit did
+            work quite well at the time as I wasn't really reading that much so I could keep up.
+            When this started to break apart was once I graduated, had a lot more free time, and
+            joined a book club. From there I increased my reading tenfold and was getting through at
+            least two books every week. That makes for a lot of copying and pasting and I was
+            getting lazy. I knew there had to be a better way of doing this, given I am a software
+            engineer, so I really put my mind to it and investigated how to automate the process.
+            What I would have liked to do is get access to a goodreads API and just automatically
+            pull any new review I publish, but alas theere is no public API so that was down the
+            drain. I did find the next best thing though, the goodreads library export, which nicely
+            turns your library into a csv which dates, reviews, and tags, all the important
+            information I actually needed. All I had to do then was create a python script that
+            could just rip out all the read books with reviews and turn them into HTML, which I did
+            manage to do, and away we went, nice and neat, job done right? Well no, because
+            improvements are a slippery slope, I was only happy with that for a little while, as
+            soon I got bored of just a block of reviews on my page that was hard to manage, so then
+            I added a way to expand and hide the full review texts to make it easier to navigate.
+            But then after a few more months that wasn't enough what if people wanted to filter, so
+            I added that too and then added compound filters, and I was happy there too for quite a
+            while. All this time though I still need to manually export my goodreads library and run
+            the script to turn it into HTML, which thatn needed reformating with prettier, so it was
+            hardly a neat method.
+            <br />
+            <br />
+            Finally come this week I get bored again, so that means it is time to update the page
+            once more, but I wasn't content to just make some small changes, I wanted to go crazy
+            and that I did. First I added searching and sorting functionality so that people could
+            better find the reviews they were looking for. But then I thought what if people wanted
+            to share the reviews too, which now I think about it is crazy cos ain't nobody reading
+            the reviews direct from my website, but anyway I added a way to copy link to the exact
+            review. Almost as soon as I did that I didn't like it as you could still see all the
+            other reviews I had written so something big had to change. And change it did! I finally
+            went back to where it all started, that export converter, and I decided it just wasn't
+            very efficient to recreate the html every single time, so I did what has never been done
+            before on this website, I created a javascript file. With that basis I was able to make
+            the converter output json instead which the javascript could dynamically load into the
+            page, so that when I share a review link it can have it's own little page. That is where
+            things sit now I think, but don't be fooled, I am sure in the next few months I will
+            make another change so keep watch out.
+            <br />
+            <br />
+            Also if it wasn't clear I kinda just wrote this so that I could stop neglecting my blog
+            page, I don't think this was actually informative.
+          </p>
+        </div>
+      </div>
+      <div class="sidebar"></div>
+    </div>
+  </body>
+</html>

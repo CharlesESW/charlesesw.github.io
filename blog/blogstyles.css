@@ -1,106 +1,53 @@
 @import url("../theme.css");
 
-body {
-    background: var(--page-bg);
-    color: var(--page-text);
-}
-
 header {
-    width: 100%;
     max-width: 800px;
     margin: 20px auto;
-    padding: 0 15px;
-    box-sizing: border-box;
-}
-
-header h1 {
-    text-align: center;
 }
 
 .content {
-    display: flex;
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0 10px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .sidebar {
     flex: 0.5;
     padding: 10px;
-    box-sizing: border-box;
 }
 
 .main {
     flex: 3;
-    text-align: left;
     padding: 20px;
-    box-sizing: border-box;
+    text-align: left;
 }
 
-
-h1, h2, h3 {
-    margin: 10px 0;
-    color: var(--page-heading);
-}
-
-.center-text {
-    text-align: center;
-}
-
-a {
-    color: var(--page-link);
+header a,
+.main a {
     text-decoration: underline;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-.project {
-    margin-bottom: 20px;
-}
-
-.project-header {
-    display: flex;
-    align-items: center;
-}
-
-.project-header h3 {
+.post-list {
     margin: 0;
-    margin-right: 10px;
+    padding: 0;
+    list-style: none;
 }
 
-.topnav {
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.post-list li {
+    margin-bottom: 0.75rem;
 }
 
-.topnav a {
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: rgba(255, 255, 255, 0.55);
-    color: var(--page-text);
-}
-
-.topnav a.active {
-    background-color: var(--page-text);
-    color: white;
+.post-list time {
+    display: inline-block;
+    min-width: 6.5rem;
 }
 
 @media (max-width: 767px) {
     .content {
         flex-direction: column;
-        padding: 0 5px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 
     .sidebar {
@@ -110,11 +57,4 @@ a:hover {
     .main {
         padding: 10px;
     }
-}
-.bookbox{
-    border: 1px solid #1a1a1a;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: #dfdfdf;
 }

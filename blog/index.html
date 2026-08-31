@@ -6,34 +6,41 @@
     <title>Charlie's Blog</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link rel="stylesheet" href="blogstyles.css" />
+    <link rel="alternate" type="application/rss+xml" title="Charlie's Blog RSS" href="/RSS.xml" />
   </head>
   <body>
-    <div class="topnav">
+    <nav class="topnav" aria-label="Primary navigation">
       <a href="/">Home</a>
-      <a class="active" href="/blog/">Blog</a>
+      <a class="active" href="/blog/" aria-current="page">Blog</a>
       <a href="/books/">Books</a>
-      <!-- <a href="#contact">Contact</a>
-        <a href="#about">About</a> -->
-    </div>
+    </nav>
     <header>
       <h1>Blog</h1>
-      <h3><a target="_blank" href="/RSS.xml">Subscribe to my RSS Feed</a></h3>
+      <p><a href="/RSS.xml">Subscribe to my RSS feed</a></p>
     </header>
-    <div class="content">
+    <main class="content">
       <div class="sidebar"></div>
       <div class="main">
-        <div>
-          <p>
-            - 08/05/2025 - <a href="/blog/ten-pointless-facts/"> Ten Pointless Facts About Me </a>
-          </p>
-          <p>
-            - 16/02/2025 -
-            <a href="/blog/cataloging-my-home-library/"> Cataloging My Home Library </a>
-          </p>
-          <p>- 14/02/2025 - <a href="/blog/first-post/"> My first blog post </a></p>
-        </div>
+        <ul class="post-list">
+          <li>
+            <time datetime="2026-08-31">31/08/2026</time>
+            <a href="/blog/creating-my-book-review-page/">Creating My Book Review Page</a>
+          </li>
+          <li>
+            <time datetime="2025-05-08">08/05/2025</time>
+            <a href="/blog/ten-pointless-facts/">Ten Pointless Facts About Me</a>
+          </li>
+          <li>
+            <time datetime="2025-02-16">16/02/2025</time>
+            <a href="/blog/cataloging-my-home-library/">Cataloging My Home Library</a>
+          </li>
+          <li>
+            <time datetime="2025-02-14">14/02/2025</time>
+            <a href="/blog/first-post/">My First Blog Post</a>
+          </li>
+        </ul>
       </div>
       <div class="sidebar"></div>
-    </div>
+    </main>
   </body>
 </html>

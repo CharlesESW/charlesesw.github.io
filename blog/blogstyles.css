@@ -8,9 +8,13 @@ body {
 header {
     width: 100%;
     max-width: 800px;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 0 15px;
     box-sizing: border-box;
+}
+
+header h1 {
+    text-align: center;
 }
 
 .content {
